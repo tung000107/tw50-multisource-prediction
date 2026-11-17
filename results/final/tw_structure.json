@@ -1,0 +1,647 @@
+{
+ "n_stocks": 50,
+ "sectors": {
+  "1101": "Traditional/Consumer",
+  "1216": "Traditional/Consumer",
+  "1301": "Traditional/Consumer",
+  "1303": "Traditional/Consumer",
+  "1326": "Traditional/Consumer",
+  "2002": "Traditional/Consumer",
+  "2207": "Traditional/Consumer",
+  "2301": "Electronics/HW",
+  "2303": "Semiconductor",
+  "2308": "Electronics/HW",
+  "2317": "Electronics/HW",
+  "2327": "Electronics/HW",
+  "2330": "Semiconductor",
+  "2345": "Electronics/HW",
+  "2357": "Electronics/HW",
+  "2379": "Semiconductor",
+  "2382": "Electronics/HW",
+  "2383": "Electronics/HW",
+  "2395": "Electronics/HW",
+  "2408": "Semiconductor",
+  "2412": "Telecom",
+  "2454": "Semiconductor",
+  "2603": "Shipping",
+  "2609": "Shipping",
+  "2615": "Shipping",
+  "2880": "Financials",
+  "2881": "Financials",
+  "2882": "Financials",
+  "2883": "Financials",
+  "2884": "Financials",
+  "2885": "Financials",
+  "2886": "Financials",
+  "2887": "Financials",
+  "2890": "Financials",
+  "2891": "Financials",
+  "2892": "Financials",
+  "2912": "Traditional/Consumer",
+  "3017": "Electronics/HW",
+  "3034": "Semiconductor",
+  "3037": "Electronics/HW",
+  "3045": "Telecom",
+  "3231": "Electronics/HW",
+  "3661": "Semiconductor",
+  "3711": "Semiconductor",
+  "4904": "Telecom",
+  "5871": "Financials",
+  "5876": "Financials",
+  "5880": "Financials",
+  "6505": "Traditional/Consumer",
+  "6669": "Electronics/HW"
+ },
+ "contemporaneous": {
+  "n_days": 896,
+  "mean_corr_within_sector": 0.4559118765892061,
+  "mean_corr_cross_sector": 0.29154495331698427,
+  "mean_corr_all": 0.3236132754900953,
+  "by_sector": {
+   "Electronics/HW": 0.3034042568615698,
+   "Financials": 0.5999196229749828,
+   "Semiconductor": 0.4339939082208191,
+   "Shipping": 0.5740773890767275,
+   "Telecom": 0.44535778552095007,
+   "Traditional/Consumer": 0.43040516180328897
+  },
+  "ari_clusters_vs_sectors": 0.13638042719834279,
+  "clusters": {
+   "1": [
+    "2603",
+    "2609",
+    "2615"
+   ],
+   "2": [
+    "1216",
+    "2412",
+    "2912",
+    "3045",
+    "4904"
+   ],
+   "3": [
+    "2345",
+    "6669"
+   ],
+   "4": [
+    "1101",
+    "1301",
+    "1303",
+    "1326",
+    "2002",
+    "2207",
+    "2303",
+    "2308",
+    "2317",
+    "2327",
+    "2330",
+    "2357",
+    "2379",
+    "2382",
+    "2383",
+    "2395",
+    "2408",
+    "2454",
+    "2880",
+    "2881",
+    "2882",
+    "2883",
+    "2884",
+    "2885",
+    "2886",
+    "2887",
+    "2890",
+    "2891",
+    "2892",
+    "3017",
+    "3034",
+    "3037",
+    "3231",
+    "3711",
+    "5871",
+    "5876",
+    "5880",
+    "6505"
+   ],
+   "5": [
+    "2301"
+   ],
+   "6": [
+    "3661"
+   ]
+  }
+ },
+ "leadlag": {
+  "n_days": 895,
+  "n_pairs_tested": 2450,
+  "n_significant_holm05": 18,
+  "n_positive": 14,
+  "share_within_sector": 0.4444444444444444,
+  "prior_share_within_sector": 0.19510204081632654,
+  "self_autocorr_mean": 0.013539483642367442,
+  "self_autocorr_significant": 3,
+  "abs_corr_quantiles": {
+   "0.5": 0.03222984543290271,
+   "0.9": 0.08074625811657273,
+   "0.99": 0.1335271463274649
+  },
+  "top_edges": [
+   {
+    "leader": "1301",
+    "leader_name": "\u53f0\u5851",
+    "follower": "1303",
+    "follower_name": "\u5357\u4e9e",
+    "corr": 0.2862
+   },
+   {
+    "leader": "5880",
+    "leader_name": "\u5408\u5eab\u91d1",
+    "follower": "2880",
+    "follower_name": "\u83ef\u5357\u91d1",
+    "corr": 0.2208
+   },
+   {
+    "leader": "5880",
+    "leader_name": "\u5408\u5eab\u91d1",
+    "follower": "2886",
+    "follower_name": "\u5146\u8c50\u91d1",
+    "corr": 0.2111
+   },
+   {
+    "leader": "5876",
+    "leader_name": "\u4e0a\u6d77\u5546\u9280",
+    "follower": "2884",
+    "follower_name": "\u7389\u5c71\u91d1",
+    "corr": 0.1891
+   },
+   {
+    "leader": "2330",
+    "leader_name": "\u53f0\u7a4d\u96fb",
+    "follower": "4904",
+    "follower_name": "\u9060\u50b3",
+    "corr": -0.1663
+   },
+   {
+    "leader": "1303",
+    "leader_name": "\u5357\u4e9e",
+    "follower": "2884",
+    "follower_name": "\u7389\u5c71\u91d1",
+    "corr": 0.1635
+   },
+   {
+    "leader": "2330",
+    "leader_name": "\u53f0\u7a4d\u96fb",
+    "follower": "2884",
+    "follower_name": "\u7389\u5c71\u91d1",
+    "corr": -0.1631
+   },
+   {
+    "leader": "2330",
+    "leader_name": "\u53f0\u7a4d\u96fb",
+    "follower": "2891",
+    "follower_name": "\u4e2d\u4fe1\u91d1",
+    "corr": -0.1621
+   },
+   {
+    "leader": "2609",
+    "leader_name": "\u967d\u660e",
+    "follower": "1326",
+    "follower_name": "\u53f0\u5316",
+    "corr": 0.1611
+   },
+   {
+    "leader": "2890",
+    "leader_name": "\u6c38\u8c50\u91d1",
+    "follower": "1216",
+    "follower_name": "\u7d71\u4e00",
+    "corr": 0.1544
+   },
+   {
+    "leader": "2892",
+    "leader_name": "\u7b2c\u4e00\u91d1",
+    "follower": "2884",
+    "follower_name": "\u7389\u5c71\u91d1",
+    "corr": 0.1523
+   },
+   {
+    "leader": "2890",
+    "leader_name": "\u6c38\u8c50\u91d1",
+    "follower": "2880",
+    "follower_name": "\u83ef\u5357\u91d1",
+    "corr": 0.1516
+   },
+   {
+    "leader": "2880",
+    "leader_name": "\u83ef\u5357\u91d1",
+    "follower": "2912",
+    "follower_name": "\u7d71\u4e00\u8d85",
+    "corr": 0.1459
+   },
+   {
+    "leader": "1326",
+    "leader_name": "\u53f0\u5316",
+    "follower": "1303",
+    "follower_name": "\u5357\u4e9e",
+    "corr": 0.1447
+   },
+   {
+    "leader": "2330",
+    "leader_name": "\u53f0\u7a4d\u96fb",
+    "follower": "2912",
+    "follower_name": "\u7d71\u4e00\u8d85",
+    "corr": -0.1445
+   },
+   {
+    "leader": "2890",
+    "leader_name": "\u6c38\u8c50\u91d1",
+    "follower": "2884",
+    "follower_name": "\u7389\u5c71\u91d1",
+    "corr": 0.1444
+   },
+   {
+    "leader": "1326",
+    "leader_name": "\u53f0\u5316",
+    "follower": "2884",
+    "follower_name": "\u7389\u5c71\u91d1",
+    "corr": 0.1425
+   },
+   {
+    "leader": "2892",
+    "leader_name": "\u7b2c\u4e00\u91d1",
+    "follower": "1216",
+    "follower_name": "\u7d71\u4e00",
+    "corr": 0.1424
+   }
+  ],
+  "leaders": [
+   {
+    "stock": "2330",
+    "name": "\u53f0\u7a4d\u96fb",
+    "sector": "Semiconductor",
+    "out_degree": 4
+   },
+   {
+    "stock": "2890",
+    "name": "\u6c38\u8c50\u91d1",
+    "sector": "Financials",
+    "out_degree": 3
+   },
+   {
+    "stock": "2892",
+    "name": "\u7b2c\u4e00\u91d1",
+    "sector": "Financials",
+    "out_degree": 2
+   },
+   {
+    "stock": "5880",
+    "name": "\u5408\u5eab\u91d1",
+    "sector": "Financials",
+    "out_degree": 2
+   },
+   {
+    "stock": "1326",
+    "name": "\u53f0\u5316",
+    "sector": "Traditional/Consumer",
+    "out_degree": 2
+   },
+   {
+    "stock": "1303",
+    "name": "\u5357\u4e9e",
+    "sector": "Traditional/Consumer",
+    "out_degree": 1
+   },
+   {
+    "stock": "2880",
+    "name": "\u83ef\u5357\u91d1",
+    "sector": "Financials",
+    "out_degree": 1
+   },
+   {
+    "stock": "1301",
+    "name": "\u53f0\u5851",
+    "sector": "Traditional/Consumer",
+    "out_degree": 1
+   },
+   {
+    "stock": "5876",
+    "name": "\u4e0a\u6d77\u5546\u9280",
+    "sector": "Financials",
+    "out_degree": 1
+   },
+   {
+    "stock": "2609",
+    "name": "\u967d\u660e",
+    "sector": "Shipping",
+    "out_degree": 1
+   }
+  ],
+  "followers": [
+   {
+    "stock": "2884",
+    "name": "\u7389\u5c71\u91d1",
+    "sector": "Financials",
+    "in_degree": 6
+   },
+   {
+    "stock": "1216",
+    "name": "\u7d71\u4e00",
+    "sector": "Traditional/Consumer",
+    "in_degree": 2
+   },
+   {
+    "stock": "2880",
+    "name": "\u83ef\u5357\u91d1",
+    "sector": "Financials",
+    "in_degree": 2
+   },
+   {
+    "stock": "2912",
+    "name": "\u7d71\u4e00\u8d85",
+    "sector": "Traditional/Consumer",
+    "in_degree": 2
+   },
+   {
+    "stock": "1303",
+    "name": "\u5357\u4e9e",
+    "sector": "Traditional/Consumer",
+    "in_degree": 2
+   },
+   {
+    "stock": "1326",
+    "name": "\u53f0\u5316",
+    "sector": "Traditional/Consumer",
+    "in_degree": 1
+   },
+   {
+    "stock": "2886",
+    "name": "\u5146\u8c50\u91d1",
+    "sector": "Financials",
+    "in_degree": 1
+   },
+   {
+    "stock": "2891",
+    "name": "\u4e2d\u4fe1\u91d1",
+    "sector": "Financials",
+    "in_degree": 1
+   },
+   {
+    "stock": "4904",
+    "name": "\u9060\u50b3",
+    "sector": "Telecom",
+    "in_degree": 1
+   },
+   {
+    "stock": "1101",
+    "name": "\u53f0\u6ce5",
+    "sector": "Traditional/Consumer",
+    "in_degree": 0
+   }
+  ],
+  "raw_returns_n_significant_bonf": 3,
+  "sector_pair_mean_corr": {
+   "Electronics/HW": {
+    "Electronics/HW": 0.006373785973456862,
+    "Financials": 0.00672126941437482,
+    "Semiconductor": -0.005652792239000248,
+    "Shipping": 0.016099060560504263,
+    "Telecom": 0.01725982074990204,
+    "Traditional/Consumer": 0.0023829734512629376
+   },
+   "Financials": {
+    "Electronics/HW": 0.0013712230191725825,
+    "Financials": 0.04962339410762018,
+    "Semiconductor": -0.029863898413210188,
+    "Shipping": -0.02162535776236913,
+    "Telecom": 0.07667451862199581,
+    "Traditional/Consumer": 0.04822228854731956
+   },
+   "Semiconductor": {
+    "Electronics/HW": -0.008107380809969901,
+    "Financials": -0.030848792862138704,
+    "Semiconductor": 0.014154013082096822,
+    "Shipping": 0.02955839904274696,
+    "Telecom": -0.05776422681827211,
+    "Traditional/Consumer": -0.025503885094462456
+   },
+   "Shipping": {
+    "Electronics/HW": 0.013064375813305613,
+    "Financials": 0.0361255707224449,
+    "Semiconductor": -0.02517974491510192,
+    "Shipping": 0.0055209014083088355,
+    "Telecom": 0.07242902566564792,
+    "Traditional/Consumer": 0.04617708007191961
+   },
+   "Telecom": {
+    "Electronics/HW": 0.004773205254792731,
+    "Financials": 0.03889190999277619,
+    "Semiconductor": -0.01994340117980736,
+    "Shipping": -0.054021423423216655,
+    "Telecom": 0.06464326216493566,
+    "Traditional/Consumer": 0.012833831260921911
+   },
+   "Traditional/Consumer": {
+    "Electronics/HW": 0.0009899259967097167,
+    "Financials": 0.040348093925001126,
+    "Semiconductor": -0.026202097507152702,
+    "Shipping": -0.025678425532316206,
+    "Telecom": 0.03778274381763019,
+    "Traditional/Consumer": 0.03453811794083364
+   }
+  }
+ },
+ "lasso": {
+  "n_edges": {
+   "2023": 101,
+   "2024": 55,
+   "2025": 47,
+   "2026": 49
+  },
+  "oos_r2_mean": {
+   "2023": -0.011593119952924377,
+   "2024": -0.009598003419321243,
+   "2025": -0.007396396981387981,
+   "2026": -0.006517467602326548
+  },
+  "jaccard_consecutive": {
+   "2023->2024": 0.3565217391304348,
+   "2024->2025": 0.2911392405063291,
+   "2025->2026": 0.21518987341772153
+  },
+  "parents_per_stock_mean": {
+   "2023": 2.06,
+   "2024": 1.14,
+   "2025": 0.96,
+   "2026": 1.08
+  },
+  "taiex_parent_share": {
+   "2023": 0.04,
+   "2024": 0.04,
+   "2025": 0.02,
+   "2026": 0.1
+  },
+  "top_parents_2023": [
+   {
+    "stock": "2330",
+    "name": "\u53f0\u7a4d\u96fb",
+    "n_children": 8
+   },
+   {
+    "stock": "2207",
+    "name": "\u548c\u6cf0\u8eca",
+    "n_children": 5
+   },
+   {
+    "stock": "1303",
+    "name": "\u5357\u4e9e",
+    "n_children": 5
+   },
+   {
+    "stock": "2892",
+    "name": "\u7b2c\u4e00\u91d1",
+    "n_children": 4
+   },
+   {
+    "stock": "2609",
+    "name": "\u967d\u660e",
+    "n_children": 4
+   },
+   {
+    "stock": "2408",
+    "name": "\u5357\u4e9e\u79d1",
+    "n_children": 4
+   },
+   {
+    "stock": "2880",
+    "name": "\u83ef\u5357\u91d1",
+    "n_children": 4
+   },
+   {
+    "stock": "1101",
+    "name": "\u53f0\u6ce5",
+    "n_children": 4
+   },
+   {
+    "stock": "2002",
+    "name": "\u4e2d\u92fc",
+    "n_children": 3
+   },
+   {
+    "stock": "3711",
+    "name": "\u65e5\u6708\u5149\u6295\u63a7",
+    "n_children": 3
+   }
+  ]
+ },
+ "prior": {
+  "n_undirected_edges": 241,
+  "n_supply_chain_ties": 42,
+  "density": 0.19673469387755102,
+  "degree_top": [
+   {
+    "stock": "2317",
+    "name": "\u9d3b\u6d77",
+    "degree": 13
+   },
+   {
+    "stock": "3037",
+    "name": "\u6b23\u8208",
+    "degree": 13
+   },
+   {
+    "stock": "2880",
+    "name": "\u83ef\u5357\u91d1",
+    "degree": 13
+   },
+   {
+    "stock": "2881",
+    "name": "\u5bcc\u90a6\u91d1",
+    "degree": 13
+   },
+   {
+    "stock": "2882",
+    "name": "\u570b\u6cf0\u91d1",
+    "degree": 13
+   },
+   {
+    "stock": "2883",
+    "name": "\u51f1\u57fa\u91d1",
+    "degree": 13
+   },
+   {
+    "stock": "2884",
+    "name": "\u7389\u5c71\u91d1",
+    "degree": 13
+   },
+   {
+    "stock": "2885",
+    "name": "\u5143\u5927\u91d1",
+    "degree": 13
+   }
+  ]
+ },
+ "overlap": {
+  "leadlag_sig_first_window": {
+   "n": 18,
+   "in_prior": 8,
+   "share_in_prior": 0.4444444444444444,
+   "chance": 0.19673469387755102,
+   "lift": 2.2591055786076533
+  },
+  "lasso_2023": {
+   "n": 101,
+   "in_prior": 13,
+   "share_in_prior": 0.12871287128712872,
+   "chance": 0.19673469387755102,
+   "lift": 0.654245922517563
+  },
+  "lasso_2024": {
+   "n": 55,
+   "in_prior": 12,
+   "share_in_prior": 0.21818181818181817,
+   "chance": 0.19673469387755102,
+   "lift": 1.1090154658619389
+  },
+  "lasso_2025": {
+   "n": 47,
+   "in_prior": 11,
+   "share_in_prior": 0.23404255319148937,
+   "chance": 0.19673469387755102,
+   "lift": 1.1896353844795622
+  },
+  "lasso_2026": {
+   "n": 49,
+   "in_prior": 16,
+   "share_in_prior": 0.32653061224489793,
+   "chance": 0.19673469387755102,
+   "lift": 1.6597510373443982
+  },
+  "leadlag_2023": {
+   "n": 18,
+   "in_prior": 8,
+   "share_in_prior": 0.4444444444444444,
+   "chance": 0.19673469387755102,
+   "lift": 2.2591055786076533
+  },
+  "leadlag_2024": {
+   "n": 10,
+   "in_prior": 5,
+   "share_in_prior": 0.5,
+   "chance": 0.19673469387755102,
+   "lift": 2.54149377593361
+  },
+  "leadlag_2025": {
+   "n": 25,
+   "in_prior": 12,
+   "share_in_prior": 0.48,
+   "chance": 0.19673469387755102,
+   "lift": 2.4398340248962653
+  },
+  "leadlag_2026": {
+   "n": 7,
+   "in_prior": 4,
+   "share_in_prior": 0.5714285714285714,
+   "chance": 0.19673469387755102,
+   "lift": 2.904564315352697
+  }
+ }
+}

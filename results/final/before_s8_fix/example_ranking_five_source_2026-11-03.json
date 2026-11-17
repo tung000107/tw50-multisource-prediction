@@ -1,0 +1,79 @@
+{
+ "feature_date": "2026-09-23",
+ "trade_date": "2026-09-24",
+ "sox_overnight": -0.012257071828612576,
+ "top": [
+  {
+   "stock": "1303",
+   "name": "南亞",
+   "sector": "Traditional/Consumer",
+   "p_up": 0.4,
+   "realised": 0.04615384615384621
+  },
+  {
+   "stock": "2345",
+   "name": "智邦",
+   "sector": "Electronics/HW",
+   "p_up": 0.4,
+   "realised": 0.002645502645502562
+  },
+  {
+   "stock": "1326",
+   "name": "台化",
+   "sector": "Traditional/Consumer",
+   "p_up": 0.399,
+   "realised": 0.024464831804281273
+  },
+  {
+   "stock": "2303",
+   "name": "聯電",
+   "sector": "Semiconductor",
+   "p_up": 0.397,
+   "realised": -0.03749999999999998
+  },
+  {
+   "stock": "2454",
+   "name": "聯發科",
+   "sector": "Semiconductor",
+   "p_up": 0.397,
+   "realised": 0.01928640308582441
+  }
+ ],
+ "bottom": [
+  {
+   "stock": "2412",
+   "name": "中華電",
+   "sector": "Telecom",
+   "p_up": 0.384,
+   "realised": -0.0034364261168384758
+  },
+  {
+   "stock": "5871",
+   "name": "中租-KY",
+   "sector": "Financials",
+   "p_up": 0.384,
+   "realised": -0.0092592592592593
+  },
+  {
+   "stock": "4904",
+   "name": "遠傳",
+   "sector": "Telecom",
+   "p_up": 0.384,
+   "realised": 0.0
+  },
+  {
+   "stock": "1216",
+   "name": "統一",
+   "sector": "Traditional/Consumer",
+   "p_up": 0.383,
+   "realised": -0.011936339522546469
+  },
+  {
+   "stock": "2330",
+   "name": "台積電",
+   "sector": "Semiconductor",
+   "p_up": 0.383,
+   "realised": -0.010000000000000009
+  }
+ ]
+}

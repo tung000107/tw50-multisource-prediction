@@ -1,0 +1,726 @@
+{
+ "directed_ties": [
+  {
+   "up": "3037",
+   "up_name": "\u6b23\u8208",
+   "down": "2330",
+   "down_name": "\u53f0\u7a4d\u96fb",
+   "why": "Unimicron ABF substrates \u2192 TSMC advanced packaging",
+   "daily_up_leads": 0.03114207113248193,
+   "daily_down_leads": 0.049370210207427545,
+   "weekly_up_leads": -0.04111973120394942,
+   "weekly_down_leads": 0.08336841277892,
+   "t_daily_up": 1.327018054152316,
+   "t_weekly_up": -0.7905528714432997,
+   "contemporaneous": -0.07775545189542171
+  },
+  {
+   "up": "2330",
+   "up_name": "\u53f0\u7a4d\u96fb",
+   "down": "3711",
+   "down_name": "\u65e5\u6708\u5149\u6295\u63a7",
+   "why": "TSMC wafers \u2192 ASE packaging/testing",
+   "daily_up_leads": 0.04537297385262508,
+   "daily_down_leads": -0.005456301399422978,
+   "weekly_up_leads": 0.00048216640010157564,
+   "weekly_down_leads": -0.031396788981609566,
+   "t_daily_up": 1.9350093276723959,
+   "t_weekly_up": 0.009262115165547308,
+   "contemporaneous": 0.08064467444408117
+  },
+  {
+   "up": "2330",
+   "up_name": "\u53f0\u7a4d\u96fb",
+   "down": "2454",
+   "down_name": "\u806f\u767c\u79d1",
+   "why": "TSMC foundry \u2192 MediaTek",
+   "daily_up_leads": 0.0721668105529756,
+   "daily_down_leads": -0.03929901261150507,
+   "weekly_up_leads": -0.0005151334806178548,
+   "weekly_down_leads": 0.040487502261370524,
+   "t_daily_up": 3.0825469152061715,
+   "t_weekly_up": -0.009895392338705119,
+   "contemporaneous": -0.037030980320131655
+  },
+  {
+   "up": "2330",
+   "up_name": "\u53f0\u7a4d\u96fb",
+   "down": "3034",
+   "down_name": "\u806f\u8a60",
+   "why": "TSMC/UMC foundry \u2192 Novatek",
+   "daily_up_leads": 0.029143178932138074,
+   "daily_down_leads": -0.026318109143272258,
+   "weekly_up_leads": -0.06751430572089638,
+   "weekly_down_leads": 0.05629001791027943,
+   "t_daily_up": 1.24210910238538,
+   "t_weekly_up": -1.299873375027681,
+   "contemporaneous": -0.10706619486011011
+  },
+  {
+   "up": "2330",
+   "up_name": "\u53f0\u7a4d\u96fb",
+   "down": "2379",
+   "down_name": "\u745e\u6631",
+   "why": "TSMC foundry \u2192 Realtek",
+   "daily_up_leads": 0.08482738377895495,
+   "daily_down_leads": 0.013187154245748787,
+   "weekly_up_leads": 0.0556314460190178,
+   "weekly_down_leads": 0.11433387634950505,
+   "t_daily_up": 3.626958275527509,
+   "t_weekly_up": 1.070302681823656,
+   "contemporaneous": -0.0622433305304188
+  },
+  {
+   "up": "2330",
+   "up_name": "\u53f0\u7a4d\u96fb",
+   "down": "3661",
+   "down_name": "\u4e16\u82af-KY",
+   "why": "TSMC advanced nodes \u2192 Alchip ASICs",
+   "daily_up_leads": 0.06453881300035255,
+   "daily_down_leads": -0.030613923320534114,
+   "weekly_up_leads": 0.06483145919561134,
+   "weekly_down_leads": 0.04887833388681401,
+   "t_daily_up": 2.755279440446735,
+   "t_weekly_up": 1.247997164635487,
+   "contemporaneous": -0.07722905585703506
+  },
+  {
+   "up": "2303",
+   "up_name": "\u806f\u96fb",
+   "down": "3034",
+   "down_name": "\u806f\u8a60",
+   "why": "UMC foundry \u2192 Novatek",
+   "daily_up_leads": -0.02277973263500083,
+   "daily_down_leads": 0.04260342026855496,
+   "weekly_up_leads": 0.008746784465423844,
+   "weekly_down_leads": 0.06353088503509986,
+   "t_daily_up": -0.9707326735374613,
+   "t_weekly_up": 0.16802667049767353,
+   "contemporaneous": 0.19229847390715915
+  },
+  {
+   "up": "2303",
+   "up_name": "\u806f\u96fb",
+   "down": "2379",
+   "down_name": "\u745e\u6631",
+   "why": "UMC foundry \u2192 Realtek",
+   "daily_up_leads": -0.020171894014348584,
+   "daily_down_leads": 0.02850494347759758,
+   "weekly_up_leads": 0.1039792730013386,
+   "weekly_down_leads": 0.08380286674207506,
+   "t_daily_up": -0.8595544017871001,
+   "t_weekly_up": 2.0082624678599243,
+   "contemporaneous": 0.09994826637924836
+  },
+  {
+   "up": "2383",
+   "up_name": "\u53f0\u5149\u96fb",
+   "down": "3037",
+   "down_name": "\u6b23\u8208",
+   "why": "EMC copper-clad laminate \u2192 Unimicron PCB",
+   "daily_up_leads": 0.055523317828927096,
+   "daily_down_leads": -0.010378309966865697,
+   "weekly_up_leads": 0.05367831478970946,
+   "weekly_down_leads": 0.05585412465802396,
+   "t_daily_up": 2.368451604538349,
+   "t_weekly_up": 1.032615497797312,
+   "contemporaneous": 0.2273408175499082
+  },
+  {
+   "up": "3037",
+   "up_name": "\u6b23\u8208",
+   "down": "2382",
+   "down_name": "\u5ee3\u9054",
+   "why": "Unimicron PCB \u2192 Quanta servers",
+   "daily_up_leads": -0.03416745989125354,
+   "daily_down_leads": 0.00016438699562324594,
+   "weekly_up_leads": -0.011530476000044157,
+   "weekly_down_leads": 0.016184713254768234,
+   "t_daily_up": -1.456079152042393,
+   "t_weekly_up": -0.2215079364724601,
+   "contemporaneous": 0.019069203474411746
+  },
+  {
+   "up": "3037",
+   "up_name": "\u6b23\u8208",
+   "down": "6669",
+   "down_name": "\u7def\u7a4e",
+   "why": "Unimicron PCB \u2192 Wiwynn servers",
+   "daily_up_leads": -0.020967731938451264,
+   "daily_down_leads": 0.06583155606810782,
+   "weekly_up_leads": 0.01390951024722086,
+   "weekly_down_leads": -0.07770503719657089,
+   "t_daily_up": -0.8932346999058995,
+   "t_weekly_up": 0.26721881784514045,
+   "contemporaneous": 0.05513370022013325
+  },
+  {
+   "up": "3017",
+   "up_name": "\u5947\u92d0",
+   "down": "2382",
+   "down_name": "\u5ee3\u9054",
+   "why": "AVC cooling \u2192 Quanta",
+   "daily_up_leads": 0.03133464015032337,
+   "daily_down_leads": 0.02517948822657763,
+   "weekly_up_leads": 0.01805689970278794,
+   "weekly_down_leads": 0.02692047436248225,
+   "t_daily_up": 1.3355997808868652,
+   "t_weekly_up": 0.3469182776647067,
+   "contemporaneous": 0.20540905629398382
+  },
+  {
+   "up": "3017",
+   "up_name": "\u5947\u92d0",
+   "down": "6669",
+   "down_name": "\u7def\u7a4e",
+   "why": "AVC cooling \u2192 Wiwynn",
+   "daily_up_leads": 0.048763826448633404,
+   "daily_down_leads": 0.04014855671105113,
+   "weekly_up_leads": -0.07784095319720077,
+   "weekly_down_leads": 0.009379759874101255,
+   "t_daily_up": 2.079950805648032,
+   "t_weekly_up": -1.499826671650669,
+   "contemporaneous": 0.23990367463804566
+  },
+  {
+   "up": "3017",
+   "up_name": "\u5947\u92d0",
+   "down": "2317",
+   "down_name": "\u9d3b\u6d77",
+   "why": "AVC cooling \u2192 Hon Hai",
+   "daily_up_leads": -0.01959245881375816,
+   "daily_down_leads": 0.03549746074590661,
+   "weekly_up_leads": -0.014472994423295076,
+   "weekly_down_leads": 0.011289173862770079,
+   "t_daily_up": -0.8346241653983796,
+   "t_weekly_up": -0.27804626650278,
+   "contemporaneous": 0.11319370927950433
+  },
+  {
+   "up": "2308",
+   "up_name": "\u53f0\u9054\u96fb",
+   "down": "2382",
+   "down_name": "\u5ee3\u9054",
+   "why": "Delta power \u2192 Quanta",
+   "daily_up_leads": 0.010410984932535568,
+   "daily_down_leads": 0.045924216655834724,
+   "weekly_up_leads": 0.08169747936881099,
+   "weekly_down_leads": -0.018402649637473057,
+   "t_daily_up": 0.44356132302302237,
+   "t_weekly_up": 1.5746210154117435,
+   "contemporaneous": 0.043880032117125566
+  },
+  {
+   "up": "2308",
+   "up_name": "\u53f0\u9054\u96fb",
+   "down": "6669",
+   "down_name": "\u7def\u7a4e",
+   "why": "Delta power \u2192 Wiwynn",
+   "daily_up_leads": 0.0026895243029885457,
+   "daily_down_leads": -0.0322345748845429,
+   "weekly_up_leads": -0.008922441179855942,
+   "weekly_down_leads": 0.02090856361603142,
+   "t_daily_up": 0.1145817255981953,
+   "t_weekly_up": -0.17140132088906548,
+   "contemporaneous": 0.07882470563937384
+  },
+  {
+   "up": "2301",
+   "up_name": "\u5149\u5bf6\u79d1",
+   "down": "2382",
+   "down_name": "\u5ee3\u9054",
+   "why": "Lite-On power \u2192 Quanta",
+   "daily_up_leads": -0.007282993459901938,
+   "daily_down_leads": 0.07163857030405688,
+   "weekly_up_leads": 0.04719229314116374,
+   "weekly_down_leads": 0.07829359245662947,
+   "t_daily_up": -0.3102842653452689,
+   "t_weekly_up": 0.9075455143999686,
+   "contemporaneous": 0.18967281697365518
+  },
+  {
+   "up": "2327",
+   "up_name": "\u570b\u5de8",
+   "down": "2317",
+   "down_name": "\u9d3b\u6d77",
+   "why": "Yageo passives \u2192 Hon Hai",
+   "daily_up_leads": 0.007320978420409678,
+   "daily_down_leads": 0.04122695861592017,
+   "weekly_up_leads": -0.06071090565485603,
+   "weekly_down_leads": -0.03181040669601885,
+   "t_daily_up": 0.3104385234397082,
+   "t_weekly_up": -1.1683736061031034,
+   "contemporaneous": 0.018962443622947824
+  },
+  {
+   "up": "2330",
+   "up_name": "\u53f0\u7a4d\u96fb",
+   "down": "2317",
+   "down_name": "\u9d3b\u6d77",
+   "why": "TSMC-made accelerators \u2192 Hon Hai AI servers",
+   "daily_up_leads": 0.07488682170122408,
+   "daily_down_leads": -0.05466702631847667,
+   "weekly_up_leads": 0.053528607861797035,
+   "weekly_down_leads": 0.007168142349768971,
+   "t_daily_up": 3.1984917680805087,
+   "t_weekly_up": 1.0297272823607597,
+   "contemporaneous": -0.20058210294552145
+  },
+  {
+   "up": "2330",
+   "up_name": "\u53f0\u7a4d\u96fb",
+   "down": "2382",
+   "down_name": "\u5ee3\u9054",
+   "why": "TSMC-made accelerators \u2192 Quanta AI servers",
+   "daily_up_leads": 0.006189833762598304,
+   "daily_down_leads": -0.026152102199554886,
+   "weekly_up_leads": -0.07687974776508895,
+   "weekly_down_leads": 0.08126431641064413,
+   "t_daily_up": 0.2637094057967082,
+   "t_weekly_up": -1.4811955158370829,
+   "contemporaneous": -0.1339055565042464
+  },
+  {
+   "up": "2330",
+   "up_name": "\u53f0\u7a4d\u96fb",
+   "down": "6669",
+   "down_name": "\u7def\u7a4e",
+   "why": "TSMC-made accelerators \u2192 Wiwynn AI servers",
+   "daily_up_leads": 0.06482313670252936,
+   "daily_down_leads": -0.060181262216886675,
+   "weekly_up_leads": 0.02664725672825787,
+   "weekly_down_leads": 0.010089960093983916,
+   "t_daily_up": 2.7674688450196196,
+   "t_weekly_up": 0.5120589189869411,
+   "contemporaneous": -0.018250796304806235
+  },
+  {
+   "up": "2345",
+   "up_name": "\u667a\u90a6",
+   "down": "6669",
+   "down_name": "\u7def\u7a4e",
+   "why": "Accton switches \u2194 Wiwynn racks (same data-centre build)",
+   "daily_up_leads": 0.004466947364584634,
+   "daily_down_leads": 0.00959226209256083,
+   "weekly_up_leads": -0.04131763240495107,
+   "weekly_down_leads": 0.05198744566910622,
+   "t_daily_up": 0.19030643892617144,
+   "t_weekly_up": -0.7943641381630323,
+   "contemporaneous": 0.18568048251602748
+  },
+  {
+   "up": "6505",
+   "up_name": "\u53f0\u5851\u5316",
+   "down": "1301",
+   "down_name": "\u53f0\u5851",
+   "why": "Formosa Petrochemical naphtha \u2192 Formosa Plastics",
+   "daily_up_leads": 0.011780678203472525,
+   "daily_down_leads": 0.07225253429620467,
+   "weekly_up_leads": -0.13575989305188088,
+   "weekly_down_leads": 0.007729582206285609,
+   "t_daily_up": 0.5019249062565863,
+   "t_weekly_up": -2.632232200637891,
+   "contemporaneous": 0.6462166280519892
+  },
+  {
+   "up": "6505",
+   "up_name": "\u53f0\u5851\u5316",
+   "down": "1326",
+   "down_name": "\u53f0\u5316",
+   "why": "naphtha \u2192 Formosa Chemicals",
+   "daily_up_leads": 0.037148809284913965,
+   "daily_down_leads": 0.06888698726795038,
+   "weekly_up_leads": -0.13408473388937556,
+   "weekly_down_leads": 0.0035149042698810547,
+   "t_daily_up": 1.5837370994454938,
+   "t_weekly_up": -2.5991543286207293,
+   "contemporaneous": 0.6026637536070292
+  },
+  {
+   "up": "1301",
+   "up_name": "\u53f0\u5851",
+   "down": "1303",
+   "down_name": "\u5357\u4e9e",
+   "why": "Formosa Plastics \u2192 Nan Ya plastics",
+   "daily_up_leads": 0.06695502281595471,
+   "daily_down_leads": 0.1041927062066048,
+   "weekly_up_leads": -0.06512379909311004,
+   "weekly_down_leads": -0.05140579485629508,
+   "t_daily_up": 2.858887931149446,
+   "t_weekly_up": -1.2536485841638714,
+   "contemporaneous": 0.6111155844295684
+  },
+  {
+   "up": "1216",
+   "up_name": "\u7d71\u4e00",
+   "down": "2912",
+   "down_name": "\u7d71\u4e00\u8d85",
+   "why": "Uni-President goods \u2192 PCSC stores",
+   "daily_up_leads": 0.05604934847645701,
+   "daily_down_leads": 0.06847353782429283,
+   "weekly_up_leads": 0.04453627899644657,
+   "weekly_down_leads": 0.08139105038865349,
+   "t_daily_up": 2.388323238418304,
+   "t_weekly_up": 0.8563636942103667,
+   "contemporaneous": 0.6807676214603985
+  },
+  {
+   "up": "2002",
+   "up_name": "\u4e2d\u92fc",
+   "down": "1101",
+   "down_name": "\u53f0\u6ce5",
+   "why": "steel \u2194 cement (construction demand)",
+   "daily_up_leads": 0.08666979053236004,
+   "daily_down_leads": -0.003192550413484145,
+   "weekly_up_leads": 0.05577135308978852,
+   "weekly_down_leads": 0.03494000415942626,
+   "t_daily_up": 3.70530259035829,
+   "t_weekly_up": 1.0730027652499947,
+   "contemporaneous": 0.413741184986607
+  }
+ ],
+ "concepts": {
+  "AI-server / Nvidia chain": {
+   "members": [
+    "2330 \u53f0\u7a4d\u96fb",
+    "2317 \u9d3b\u6d77",
+    "2382 \u5ee3\u9054",
+    "3231 \u7def\u5275",
+    "6669 \u7def\u7a4e",
+    "3017 \u5947\u92d0",
+    "2308 \u53f0\u9054\u96fb",
+    "2383 \u53f0\u5149\u96fb",
+    "3037 \u6b23\u8208",
+    "2345 \u667a\u90a6",
+    "3661 \u4e16\u82af-KY",
+    "2454 \u806f\u767c\u79d1"
+   ],
+   "n": 12,
+   "within_corr": 0.38390093562862215,
+   "corr_with_rest": 0.6547205912630978,
+   "beta_to_overnight_sox": 0.13667191047369107,
+   "corr_overnight_sox": 0.1738840054729437,
+   "own_autocorr_daily_adj": 0.07648456976834908,
+   "group_leads_TAIEX_t1": 0.0134364538630637
+  },
+  "Apple chain": {
+   "members": [
+    "2330 \u53f0\u7a4d\u96fb",
+    "2317 \u9d3b\u6d77",
+    "2382 \u5ee3\u9054",
+    "3231 \u7def\u5275",
+    "2308 \u53f0\u9054\u96fb",
+    "2327 \u570b\u5de8",
+    "3037 \u6b23\u8208",
+    "3711 \u65e5\u6708\u5149\u6295\u63a7",
+    "2301 \u5149\u5bf6\u79d1",
+    "2383 \u53f0\u5149\u96fb"
+   ],
+   "n": 10,
+   "within_corr": 0.40383760118842327,
+   "corr_with_rest": 0.7503456271883077,
+   "beta_to_overnight_sox": 0.12038947042210092,
+   "corr_overnight_sox": 0.1633168393164016,
+   "own_autocorr_daily_adj": 0.07715667444608501,
+   "group_leads_TAIEX_t1": 0.027539277523236868
+  },
+  "Financials": {
+   "members": [
+    "2880 \u83ef\u5357\u91d1",
+    "2881 \u5bcc\u90a6\u91d1",
+    "2882 \u570b\u6cf0\u91d1",
+    "2883 \u51f1\u57fa\u91d1",
+    "2884 \u7389\u5c71\u91d1",
+    "2885 \u5143\u5927\u91d1",
+    "2886 \u5146\u8c50\u91d1",
+    "2887 \u53f0\u65b0\u91d1",
+    "2890 \u6c38\u8c50\u91d1",
+    "2891 \u4e2d\u4fe1\u91d1",
+    "2892 \u7b2c\u4e00\u91d1",
+    "5871 \u4e2d\u79df-KY",
+    "5876 \u4e0a\u6d77\u5546\u9280",
+    "5880 \u5408\u5eab\u91d1"
+   ],
+   "n": 14,
+   "within_corr": 0.5388832602794279,
+   "corr_with_rest": 0.6503976816919614,
+   "beta_to_overnight_sox": 0.01994292852786272,
+   "corr_overnight_sox": 0.04467139574461151,
+   "own_autocorr_daily_adj": 0.0748105616472453,
+   "group_leads_TAIEX_t1": -0.056281600062403445
+  },
+  "Shipping": {
+   "members": [
+    "2603 \u9577\u69ae",
+    "2609 \u967d\u660e",
+    "2615 \u842c\u6d77"
+   ],
+   "n": 3,
+   "within_corr": 0.591988600614681,
+   "corr_with_rest": 0.33746438227942643,
+   "beta_to_overnight_sox": 0.042769265019601495,
+   "corr_overnight_sox": 0.0336584708768433,
+   "own_autocorr_daily_adj": 0.054239353274357,
+   "group_leads_TAIEX_t1": -0.056470727388535806
+  },
+  "Formosa group": {
+   "members": [
+    "1301 \u53f0\u5851",
+    "1303 \u5357\u4e9e",
+    "1326 \u53f0\u5316",
+    "6505 \u53f0\u5851\u5316"
+   ],
+   "n": 4,
+   "within_corr": 0.6809617383364158,
+   "corr_with_rest": 0.5321706645538576,
+   "beta_to_overnight_sox": 0.04545187275503783,
+   "corr_overnight_sox": 0.05875529957768141,
+   "own_autocorr_daily_adj": 0.07916832385338426,
+   "group_leads_TAIEX_t1": -0.02635218145938588
+  },
+  "Telecom": {
+   "members": [
+    "2412 \u4e2d\u83ef\u96fb",
+    "3045 \u53f0\u7063\u5927",
+    "4904 \u9060\u50b3"
+   ],
+   "n": 3,
+   "within_corr": 0.4317787031570979,
+   "corr_with_rest": 0.25593487725276665,
+   "beta_to_overnight_sox": 0.0014929635870582754,
+   "corr_overnight_sox": 0.0048305370593211,
+   "own_autocorr_daily_adj": 0.07033175029861789,
+   "group_leads_TAIEX_t1": -0.04037806216685504
+  }
+ },
+ "pooled": {
+  "daily: upstream t -> downstream t+1": {
+   "corr": 0.0188324709888602,
+   "ci": [
+    0.006937810717659918,
+    0.03089618596595622
+   ],
+   "n_pairs": 49030
+  },
+  "daily: downstream t -> upstream t+1": {
+   "corr": 0.021789506486850872,
+   "ci": [
+    0.010347353908838158,
+    0.03250765577613
+   ],
+   "n_pairs": 49030
+  },
+  "weekly: upstream w -> downstream w+1": {
+   "corr": -0.003838639300850596,
+   "ci": [
+    -0.027136095753594724,
+    0.023071373465492012
+   ],
+   "n_pairs": 10017
+  },
+  "weekly: downstream w -> upstream w+1": {
+   "corr": 0.021553618561574277,
+   "ci": [
+    -0.0032713092807420403,
+    0.04596839912686629
+   ],
+   "n_pairs": 10017
+  },
+  "contemporaneous daily (mean over ties)": 0.14779271705087058,
+  "n_ties": 27,
+  "n_ties_daily_up_leads_t>2": 10,
+  "n_ties_weekly_up_leads_t>2": 3
+ },
+ "customer_momentum": {
+  "n_months": 76,
+  "ic_customer_to_supplier": 0.056442469914891734,
+  "t": 2.0382059510916597,
+  "ic_supplier_to_customer": 0.017600037973399003,
+  "t_rev": 0.5935927956833756
+ },
+ "sector_leadlag": {
+  "lag1_daily": {
+   "Electronics/HW": {
+    "Electronics/HW": 0.0803,
+    "Financials": 0.0115,
+    "Semiconductor": 0.0613,
+    "Shipping": -0.02,
+    "Telecom": -0.0255,
+    "Traditional/Consumer": 0.0074,
+    "TAIEX": 0.0758
+   },
+   "Financials": {
+    "Electronics/HW": -0.0333,
+    "Financials": -0.0455,
+    "Semiconductor": -0.0195,
+    "Shipping": -0.0266,
+    "Telecom": 0.006,
+    "Traditional/Consumer": -0.0247,
+    "TAIEX": -0.0364
+   },
+   "Semiconductor": {
+    "Electronics/HW": 0.0344,
+    "Financials": -0.0124,
+    "Semiconductor": 0.0661,
+    "Shipping": -0.0432,
+    "Telecom": -0.0369,
+    "Traditional/Consumer": -0.0015,
+    "TAIEX": 0.058
+   },
+   "Shipping": {
+    "Electronics/HW": 0.0618,
+    "Financials": 0.0569,
+    "Semiconductor": 0.069,
+    "Shipping": 0.0577,
+    "Telecom": 0.0484,
+    "Traditional/Consumer": 0.0457,
+    "TAIEX": 0.076
+   },
+   "Telecom": {
+    "Electronics/HW": -0.0727,
+    "Financials": -0.0794,
+    "Semiconductor": -0.0764,
+    "Shipping": -0.014,
+    "Telecom": -0.0524,
+    "Traditional/Consumer": -0.0451,
+    "TAIEX": -0.09
+   },
+   "Traditional/Consumer": {
+    "Electronics/HW": -0.0024,
+    "Financials": -0.0508,
+    "Semiconductor": 0.0167,
+    "Shipping": -0.0156,
+    "Telecom": -0.0281,
+    "Traditional/Consumer": 0.0116,
+    "TAIEX": -0.009
+   },
+   "TAIEX": {
+    "Electronics/HW": 0.0136,
+    "Financials": -0.0241,
+    "Semiconductor": 0.0398,
+    "Shipping": -0.0442,
+    "Telecom": -0.0365,
+    "Traditional/Consumer": -0.0164,
+    "TAIEX": 0.0211
+   }
+  },
+  "lag1_weekly": {
+   "Electronics/HW": {
+    "Electronics/HW": -0.0008,
+    "Financials": -0.0351,
+    "Semiconductor": -0.0386,
+    "Shipping": -0.0346,
+    "Telecom": 0.0417,
+    "Traditional/Consumer": -0.0227,
+    "TAIEX": -0.0136
+   },
+   "Financials": {
+    "Electronics/HW": 0.0856,
+    "Financials": 0.0474,
+    "Semiconductor": 0.0237,
+    "Shipping": -0.0122,
+    "Telecom": 0.0282,
+    "Traditional/Consumer": 0.0205,
+    "TAIEX": 0.0562
+   },
+   "Semiconductor": {
+    "Electronics/HW": 0.083,
+    "Financials": -0.0263,
+    "Semiconductor": 0.0432,
+    "Shipping": -0.0478,
+    "Telecom": 0.0495,
+    "Traditional/Consumer": -0.0323,
+    "TAIEX": 0.045
+   },
+   "Shipping": {
+    "Electronics/HW": 0.043,
+    "Financials": -0.0036,
+    "Semiconductor": -0.0139,
+    "Shipping": 0.1579,
+    "Telecom": 0.0079,
+    "Traditional/Consumer": 0.0575,
+    "TAIEX": -0.0075
+   },
+   "Telecom": {
+    "Electronics/HW": -0.0452,
+    "Financials": 0.0632,
+    "Semiconductor": -0.0112,
+    "Shipping": 0.0522,
+    "Telecom": -0.0488,
+    "Traditional/Consumer": -0.0171,
+    "TAIEX": -0.0217
+   },
+   "Traditional/Consumer": {
+    "Electronics/HW": -0.0495,
+    "Financials": 0.0132,
+    "Semiconductor": 0.0161,
+    "Shipping": 0.0097,
+    "Telecom": -0.078,
+    "Traditional/Consumer": -0.047,
+    "TAIEX": 0.004
+   },
+   "TAIEX": {
+    "Electronics/HW": 0.0476,
+    "Financials": -0.0111,
+    "Semiconductor": 0.0225,
+    "Shipping": -0.0262,
+    "Telecom": 0.0414,
+    "Traditional/Consumer": -0.01,
+    "TAIEX": 0.0352
+   }
+  },
+  "sector_leads_TAIEX_weekly_HAC": {
+   "Electronics/HW": {
+    "beta": 0.033955040672633184,
+    "t": 0.870974337426351
+   },
+   "Financials": {
+    "beta": -0.012422146791678421,
+    "t": -0.2103716973499101
+   },
+   "Semiconductor": {
+    "beta": 0.014198462365660027,
+    "t": 0.41125321273687876
+   },
+   "Shipping": {
+    "beta": -0.009541531234246444,
+    "t": -0.4636706893200304
+   },
+   "Telecom": {
+    "beta": 0.06542466393589713,
+    "t": 0.6573609476502567
+   },
+   "Traditional/Consumer": {
+    "beta": -0.009846533451058122,
+    "t": -0.17631915712395135
+   }
+  },
+  "TAIEX_leads_sector_weekly_HAC": {
+   "Electronics/HW": {
+    "beta": -0.019084434481868976,
+    "t": -0.24863555693899708
+   },
+   "Financials": {
+    "beta": 0.05047179865555043,
+    "t": 0.9512684042487725
+   },
+   "Semiconductor": {
+    "beta": 0.07150361808768041,
+    "t": 0.8533765252631351
+   },
+   "Shipping": {
+    "beta": -0.02070777422023219,
+    "t": -0.1409007496715864
+   },
+   "Telecom": {
+    "beta": -0.013753524980792757,
+    "t": -0.35889262887052464
+   },
+   "Traditional/Consumer": {
+    "beta": 0.004097380871423722,
+    "t": 0.06347728073110316
+   }
+  },
+  "n_weeks": 379
+ }
+}

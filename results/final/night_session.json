@@ -1,0 +1,133 @@
+{
+ "n_days": 1818,
+ "correlation": {
+  "night": {
+   "next_overnight_gap": 0.7877613781250048,
+   "next_day_return": 0.5590901137566417,
+   "next_intraday_leg": -0.06717562996775855,
+   "todays_own_return": -0.04081140731558735
+  },
+  "night_first_version": {
+   "next_overnight_gap": -0.024119578331702415,
+   "next_day_return": 0.006360382132026044,
+   "next_intraday_leg": 0.03785270480038629,
+   "todays_own_return": -0.7373319270886601
+  },
+  "sox": {
+   "next_overnight_gap": 0.6092504507035718,
+   "next_day_return": 0.412009915757067,
+   "next_intraday_leg": -0.0820974404313578,
+   "todays_own_return": 0.13631527462494988
+  },
+  "sp500": {
+   "next_overnight_gap": 0.5745291579598515,
+   "next_day_return": 0.36482555298759617,
+   "next_intraday_leg": -0.11318585536955177,
+   "todays_own_return": 0.13344955820378085
+  },
+  "nasdaq": {
+   "next_overnight_gap": 0.5868673869358135,
+   "next_day_return": 0.3821159573564543,
+   "next_intraday_leg": -0.10133615386321712,
+   "todays_own_return": 0.12437293215506988
+  },
+  "tsm_adr": {
+   "next_overnight_gap": 0.4772398799900207,
+   "next_day_return": 0.3126831255079615,
+   "next_intraday_leg": -0.07842239208767672,
+   "todays_own_return": 0.22561650976551706
+  }
+ },
+ "r2_of_next_overnight_gap": {
+  "night": 0.620567988865407,
+  "five_us_series": 0.40272976537312066,
+  "both": 0.6372665449720811
+ },
+ "r2_of_next_day_return": {
+  "night": 0.31258175530041454,
+  "five_us_series": 0.17876311984198312,
+  "both": 0.32292120377134537
+ },
+ "r2_of_night_on_five_us_series": 0.5646729962971953,
+ "what_each_adds": {
+  "part_of_night_not_explained_by_us": {
+   "corr_gap": 0.48428997470416457,
+   "corr_next_day_return": 0.37968155595098657
+  },
+  "part_of_sox_not_explained_by_night": {
+   "corr_gap": 0.059699274870515864,
+   "corr_next_day_return": 0.012953649336470337
+  }
+ },
+ "sign_agreement_with_next_day_market_return": {
+  "night": 0.6969196919691969,
+  "sox": 0.6336633663366337
+ },
+ "rule_auroc_test_years": {
+  "night_return_as_score": {
+   "auroc": 0.6263228108018036,
+   "ci": [
+    0.6105320609378053,
+    0.6428974936451594
+   ]
+  },
+  "sox_return_as_score": {
+   "auroc": 0.576543699969742,
+   "ci": [
+    0.5593418579763878,
+    0.5931953293093645
+   ]
+  },
+  "night_minus_sox": {
+   "diff": 0.04977911083206166,
+   "ci": [
+    0.03685988330235641,
+    0.06479736663279681
+   ]
+  },
+  "first_version_as_score": 0.5111092923624478
+ },
+ "by_us_session": {
+  "fresh U.S. session": {
+   "n": 41824,
+   "night": 0.6263418130863839,
+   "sox": 0.5823797294572349
+  },
+  "U.S. session reused (U.S. holiday)": {
+   "n": 3149,
+   "night": 0.609851134666679,
+   "sox": 0.5041220622359482
+  }
+ },
+ "final_model_vs_night_rule": {
+  "n": 44973,
+  "night_rule": 0.6263228108018036,
+  "final_model": {
+   "auroc": 0.6306515477979021,
+   "minus_night_rule": 0.004328736996098481,
+   "ci": [
+    -0.002928592228429147,
+    0.011149793622935264
+   ],
+   "p": 0.115
+  },
+  "lightgbm_all9": {
+   "auroc": 0.6302470307080386,
+   "minus_night_rule": 0.003924219906234927,
+   "ci": [
+    -0.0026144997813998955,
+    0.0102493431257814
+   ],
+   "p": 0.132
+  },
+  "final_model_day_mean_only": {
+   "auroc": 0.6282031345437521,
+   "minus_night_rule": 0.0018803237419484642,
+   "ci": [
+    -0.0049893284915336535,
+    0.00877360240121888
+   ],
+   "p": 0.282
+  }
+ }
+}

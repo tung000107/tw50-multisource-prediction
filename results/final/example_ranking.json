@@ -1,0 +1,84 @@
+{
+ "model": "Ensemble LightGBM+LSTM All9 (ours, final)",
+ "feature_date": "2026-09-23",
+ "trade_date": "2026-09-24",
+ "sox_overnight": -0.012257071828612576,
+ "n_stocks": 50,
+ "top": [
+  {
+   "stock": "6669",
+   "name": "\u7def\u7a4e",
+   "sector": "Electronics/HW",
+   "p_up": 0.451,
+   "realised": 0.004750593824228044
+  },
+  {
+   "stock": "2345",
+   "name": "\u667a\u90a6",
+   "sector": "Electronics/HW",
+   "p_up": 0.387,
+   "realised": 0.002645502645502562
+  },
+  {
+   "stock": "2615",
+   "name": "\u842c\u6d77",
+   "sector": "Shipping",
+   "p_up": 0.385,
+   "realised": 0.017621145374449254
+  },
+  {
+   "stock": "2408",
+   "name": "\u5357\u4e9e\u79d1",
+   "sector": "Semiconductor",
+   "p_up": 0.379,
+   "realised": -0.023300970873786353
+  },
+  {
+   "stock": "3661",
+   "name": "\u4e16\u82af-KY",
+   "sector": "Semiconductor",
+   "p_up": 0.379,
+   "realised": 0.0026595744680850686
+  }
+ ],
+ "bottom": [
+  {
+   "stock": "1216",
+   "name": "\u7d71\u4e00",
+   "sector": "Traditional/Consumer",
+   "p_up": 0.328,
+   "realised": -0.011936339522546469
+  },
+  {
+   "stock": "2317",
+   "name": "\u9d3b\u6d77",
+   "sector": "Electronics/HW",
+   "p_up": 0.322,
+   "realised": -0.021484375
+  },
+  {
+   "stock": "2412",
+   "name": "\u4e2d\u83ef\u96fb",
+   "sector": "Telecom",
+   "p_up": 0.322,
+   "realised": -0.0034364261168384758
+  },
+  {
+   "stock": "2002",
+   "name": "\u4e2d\u92fc",
+   "sector": "Traditional/Consumer",
+   "p_up": 0.322,
+   "realised": 0.0
+  },
+  {
+   "stock": "2330",
+   "name": "\u53f0\u7a4d\u96fb",
+   "sector": "Semiconductor",
+   "p_up": 0.32,
+   "realised": -0.010000000000000009
+  }
+ ],
+ "top5_mean_realised": 0.0008751690876957152,
+ "bottom5_mean_realised": -0.009371428127876991,
+ "all_mean_realised": -0.0002518093748428352
+}

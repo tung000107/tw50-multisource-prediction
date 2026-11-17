@@ -1,0 +1,631 @@
+{
+ "plan": "Fresh hold-out: data that neither the models nor the authors had seen when the pipeline was fixed (feature days after 2026-09-23).\nThe study's test period (2023 -> 2026-09-23) had been inspected by the authors during the proposal / progress stages (Limitation 1).\nThis script freezes the pipeline (features, hyper-parameters, fold policy of common.py) and applies ONE more walk-forward step.\n\nPLAN, written before any new outcome was looked at (2026-11-13):\n  data      FinMind mirror + Yahoo Finance, fetched for 2026-09-01 -> 2026-11-13 and appended to the frozen raw files (old rows are kept as they are)\n  check     the rebuilt table must reproduce the frozen table on every feature day <= 2026-09-23\n  training  all rows whose label is realised before the first new feature day; inner validation = last 12 months (early stopping, threshold); refit; 1-day purge\n  models    LightGBM Full / S4-only / TW-only (seeds 1-4, seed-mean probability), LR Full, SOX-return rule, per-stock base rate; extension: LightGBM Full+S7+S8 if the S7/S8 inputs can be rebuilt\n  primary   AUROC of LightGBM Full on y_up; paired Full - S4-only, Full - TW-only, Full - SOX rule (5-day-block trading-day bootstrap, B = 1000)\n  secondary the same arms on y_gap / y_intra / y_rel; accuracy and MCC at the inner-validation threshold\n  reading   'consistent' = the hold-out CI contains the 2023-2026 walk-forward value. With ~35 trading days the CI is wide; nothing is re-tuned afterwards.\nStages: fetch | build | score.  Output: data/holdout/, results/final/fresh_holdout.json",
+ "build": {
+  "TaiwanStockPrice": {
+   "overlap_rows": 900,
+   "close_identical": 1.0,
+   "rows_added": 1550
+  },
+  "TaiwanStockInstitutionalInvestorsBuySell": {
+   "rows_added": 7750
+  },
+  "TaiwanStockMarginPurchaseShortSale": {
+   "rows_added": 1550
+  },
+  "TAIEX": {
+   "overlap_rows": 18,
+   "close_identical": 1.0,
+   "rows_added": 31
+  },
+  "us": {
+   "rows_added": 35,
+   "last": "2026-11-13"
+  },
+  "reproduces_frozen_table": {
+   "frozen_rows": 90851,
+   "matched": 90851,
+   "max_abs_feature_diff": 0.0,
+   "labels_identical": 1.0
+  },
+  "new_rows": {
+   "n": 1550,
+   "days": 31,
+   "first": "2026-09-24",
+   "last": "2026-11-12",
+   "up_rate": 0.47161290322580646
+  },
+  "extra_S7_S8": {
+   "matched": 90851,
+   "max_abs_diff_vs_frozen": 0.0,
+   "missing_share_new_rows": {
+    "tx_night_ret": 0.03225806451612903,
+    "tx_night_volume_ratio": 0.03225806451612903,
+    "tx_day_basis": 0.03225806451612903
+   }
+  }
+ },
+ "fetch": {
+  "fetched_at": "2026-11-13 14:44:38 UTC",
+  "start": "2026-09-01",
+  "end": "2026-11-13"
+ },
+ "train_rows": 90801,
+ "first_new_feature_day": "2026-09-24",
+ "last_new_feature_day": "2026-11-12",
+ "n_rows": 1550,
+ "n_days": 31,
+ "extension_features": [
+  "sector_ret1_ex",
+  "sector_ret5_ex",
+  "leader_ret1",
+  "leader_ret5",
+  "ret1_rank",
+  "xs_dispersion",
+  "ret1_minus_sector",
+  "tx_night_ret",
+  "tx_night_volume_ratio",
+  "tx_day_basis",
+  "foreign_fut_net_oi",
+  "foreign_fut_net_oi_chg",
+  "dealer_fut_net_oi",
+  "dealer_fut_net_oi_chg",
+  "total_margin_chg",
+  "total_short_chg"
+ ],
+ "labels": {
+  "y_up": {
+   "up_rate": 0.47161290322580646,
+   "arms": {
+    "LightGBM|Full": {
+     "trees": [
+      94,
+      113,
+      114,
+      120
+     ],
+     "auroc": 0.5838908014010613,
+     "ci": [
+      0.5379622020323753,
+      0.6597119401221592
+     ],
+     "thr": 0.44705179163186304,
+     "acc": 0.5516129032258065,
+     "mcc": 0.12633373166085968
+    },
+    "LightGBM|S4-only": {
+     "trees": [
+      71,
+      62,
+      56,
+      52
+     ],
+     "auroc": 0.5570413019113429,
+     "ci": [
+      0.4966396144412327,
+      0.6579526718459289
+     ],
+     "thr": 0.4615952740378056,
+     "acc": 0.5296774193548387,
+     "mcc": 0.07420805256977568
+    },
+    "LightGBM|TW-only": {
+     "trees": [
+      23,
+      31,
+      30,
+      34
+     ],
+     "auroc": 0.4687918101050796,
+     "ci": [
+      0.42723646480415295,
+      0.5216130104079958
+     ],
+     "thr": 0.5014284470021015,
+     "acc": 0.4780645161290323,
+     "mcc": -0.08046457454902525
+    },
+    "LightGBM|Full+S7+S8": {
+     "trees": [
+      74,
+      96,
+      97,
+      85
+     ],
+     "auroc": 0.5846399382651093,
+     "ci": [
+      0.5207993459647449,
+      0.6456175373062873
+     ],
+     "thr": 0.5128117103286337,
+     "acc": 0.5277419354838709,
+     "mcc": 0.044299816652800854
+    },
+    "LR Full": {
+     "auroc": 0.5369682756823659,
+     "ci": [
+      0.47491937496267594,
+      0.6095296179109952
+     ],
+     "thr": 0.5360749066720032,
+     "acc": 0.5025806451612903,
+     "mcc": -0.016752455522375125
+    },
+    "SOX-return rule": {
+     "auroc": 0.5665621048657984,
+     "ci": [
+      0.4820166850425444,
+      0.6869787474175079
+     ]
+    },
+    "stock base-rate": {
+     "auroc": 0.4839741501848205,
+     "ci": [
+      0.45191836595733603,
+      0.5185739780466752
+     ]
+    }
+   },
+   "majority_acc": 0.5283870967741935,
+   "paired": {
+    "Full minus S4-only": {
+     "diff": 0.026849499489718376,
+     "ci": [
+      -0.013211051848791735,
+      0.05146544577791255
+     ],
+     "p_boot": 0.119
+    },
+    "Full minus TW-only": {
+     "diff": 0.11509899129598172,
+     "ci": [
+      0.04680347155811255,
+      0.20470667209780416
+     ],
+     "p_boot": 0.004
+    },
+    "Full minus SOX-return rule": {
+     "diff": 0.017328696535262922,
+     "ci": [
+      -0.04052268598625652,
+      0.07397026707821967
+     ],
+     "p_boot": 0.284
+    },
+    "Full+S7+S8 minus Full": {
+     "diff": 0.0007491368640479834,
+     "ci": [
+      -0.03391939461658171,
+      0.008181655295684475
+     ],
+     "p_boot": 0.889
+    },
+    "Full+S7+S8 minus S4-only": {
+     "diff": 0.02759863635376636,
+     "ci": [
+      -0.030320726280963575,
+      0.04428631774589583
+     ],
+     "p_boot": 0.338
+    }
+   },
+   "walk_forward_2023_2026": {
+    "Full": 0.5903845336566452,
+    "S4-only": 0.5862474147131689,
+    "TW-only": 0.5202566462167972
+   },
+   "consistent_with_walk_forward": {
+    "Full": true,
+    "S4-only": true,
+    "TW-only": true
+   }
+  },
+  "y_gap": {
+   "up_rate": 0.4470967741935484,
+   "arms": {
+    "LightGBM|Full": {
+     "trees": [
+      319,
+      370,
+      536,
+      394
+     ],
+     "auroc": 0.6787309669456694,
+     "ci": [
+      0.6085720394397843,
+      0.74564015321044
+     ],
+     "thr": 0.5449139180694952,
+     "acc": 0.6483870967741936,
+     "mcc": 0.2923068396177768
+    },
+    "LightGBM|S4-only": {
+     "trees": [
+      37,
+      46,
+      16,
+      22
+     ],
+     "auroc": 0.6107928762537864,
+     "ci": [
+      0.5155908257712709,
+      0.7095931657086708
+     ],
+     "thr": 0.4002927219852772,
+     "acc": 0.5361290322580645,
+     "mcc": 0.15667607122983415
+    },
+    "LightGBM|TW-only": {
+     "trees": [
+      8,
+      25,
+      9,
+      37
+     ],
+     "auroc": 0.5697077459037786,
+     "ci": [
+      0.4993157882125671,
+      0.6234743786974488
+     ],
+     "thr": 0.4646360623524308,
+     "acc": 0.4896774193548387,
+     "mcc": 0.049265499048546456
+    },
+    "LightGBM|Full+S7+S8": {
+     "trees": [
+      422,
+      397,
+      471,
+      471
+     ],
+     "auroc": 0.7063921427982105,
+     "ci": [
+      0.6308384734546352,
+      0.7648702041233698
+     ],
+     "thr": 0.5342933969166361,
+     "acc": 0.6683870967741935,
+     "mcc": 0.3270384656675244
+    },
+    "SOX-return rule": {
+     "auroc": 0.6047312599237921,
+     "ci": [
+      0.4964502271048695,
+      0.706370984753875
+     ]
+    },
+    "stock base-rate": {
+     "auroc": 0.5675693423651418,
+     "ci": [
+      0.4818382669913265,
+      0.6312951447870941
+     ]
+    }
+   },
+   "majority_acc": 0.5529032258064517,
+   "paired": {
+    "Full minus S4-only": {
+     "diff": 0.06793809069188295,
+     "ci": [
+      0.021541964247164452,
+      0.10989286394909531
+     ],
+     "p_boot": 0.0
+    },
+    "Full minus TW-only": {
+     "diff": 0.10902322104189077,
+     "ci": [
+      0.021449608709178367,
+      0.21516995960215277
+     ],
+     "p_boot": 0.01
+    },
+    "Full minus SOX-return rule": {
+     "diff": 0.0739997070218773,
+     "ci": [
+      0.023063694594345353,
+      0.13284810152411725
+     ],
+     "p_boot": 0.003
+    },
+    "Full+S7+S8 minus Full": {
+     "diff": 0.02766117585254113,
+     "ci": [
+      -0.00253584868071115,
+      0.04987032692547811
+     ],
+     "p_boot": 0.042
+    },
+    "Full+S7+S8 minus S4-only": {
+     "diff": 0.09559926654442408,
+     "ci": [
+      0.03156770590457888,
+      0.14743548708326526
+     ],
+     "p_boot": 0.0
+    }
+   },
+   "walk_forward_2023_2026": {
+    "Full": 0.7289344876732485,
+    "S4-only": 0.6698506472642911,
+    "TW-only": 0.6058446602911783
+   },
+   "consistent_with_walk_forward": {
+    "Full": true,
+    "S4-only": true,
+    "TW-only": true
+   }
+  },
+  "y_intra": {
+   "up_rate": 0.47677419354838707,
+   "arms": {
+    "LightGBM|Full": {
+     "trees": [
+      49,
+      66,
+      75,
+      28
+     ],
+     "auroc": 0.49486342226056135,
+     "ci": [
+      0.41690026786322826,
+      0.546620588625028
+     ],
+     "thr": 0.44578790045396327,
+     "acc": 0.48774193548387096,
+     "mcc": -0.011248872475699993
+    },
+    "LightGBM|S4-only": {
+     "trees": [
+      3,
+      1,
+      2,
+      2
+     ],
+     "auroc": 0.5237765901533213,
+     "ci": [
+      0.4638233882612615,
+      0.5674198903687788
+     ],
+     "thr": 0.4531845236828557,
+     "acc": 0.5348387096774193,
+     "mcc": 0.05291846448200395
+    },
+    "LightGBM|TW-only": {
+     "trees": [
+      57,
+      4,
+      63,
+      40
+     ],
+     "auroc": 0.46028642031338374,
+     "ci": [
+      0.366730930518345,
+      0.5296438233235937
+     ],
+     "thr": 0.47104988257185443,
+     "acc": 0.5012903225806452,
+     "mcc": -0.026425499162430973
+    },
+    "LightGBM|Full+S7+S8": {
+     "trees": [
+      112,
+      9,
+      35,
+      104
+     ],
+     "auroc": 0.5210844127349086,
+     "ci": [
+      0.46444586759611817,
+      0.5704586299869812
+     ],
+     "thr": 0.4555811580192918,
+     "acc": 0.5141935483870967,
+     "mcc": 0.02932330052683852
+    },
+    "SOX-return rule": {
+     "auroc": 0.47171837171236497,
+     "ci": [
+      0.43001317413931484,
+      0.5193328083225344
+     ]
+    },
+    "stock base-rate": {
+     "auroc": 0.5337243817669427,
+     "ci": [
+      0.5012537564106585,
+      0.565064365408688
+     ]
+    }
+   },
+   "majority_acc": 0.5232258064516129,
+   "paired": {
+    "Full minus S4-only": {
+     "diff": -0.028913167892759994,
+     "ci": [
+      -0.09125863595457091,
+      0.015844429765474066
+     ],
+     "p_boot": 0.93
+    },
+    "Full minus TW-only": {
+     "diff": 0.03457700194717761,
+     "ci": [
+      -0.05058760226390732,
+      0.11473232551566083
+     ],
+     "p_boot": 0.275
+    },
+    "Full minus SOX-return rule": {
+     "diff": 0.023145050548196378,
+     "ci": [
+      -0.09664430226806578,
+      0.10571852746363467
+     ],
+     "p_boot": 0.492
+    },
+    "Full+S7+S8 minus Full": {
+     "diff": 0.026220990474347228,
+     "ci": [
+      -0.004746122263681533,
+      0.07124760005106015
+     ],
+     "p_boot": 0.041
+    },
+    "Full+S7+S8 minus S4-only": {
+     "diff": -0.0026921774184127667,
+     "ci": [
+      -0.0327471710895125,
+      0.03903611424314576
+     ],
+     "p_boot": 0.499
+    }
+   },
+   "walk_forward_2023_2026": {
+    "Full": 0.5010188310275062,
+    "S4-only": 0.48333858442253747,
+    "TW-only": 0.5135384468270592
+   },
+   "consistent_with_walk_forward": {
+    "Full": true,
+    "S4-only": true,
+    "TW-only": true
+   }
+  },
+  "y_rel": {
+   "up_rate": 0.512258064516129,
+   "arms": {
+    "LightGBM|Full": {
+     "trees": [
+      93,
+      80,
+      99,
+      104
+     ],
+     "auroc": 0.6376194474431249,
+     "ci": [
+      0.5855969095015159,
+      0.7129320197925987
+     ],
+     "thr": 0.515010144274887,
+     "acc": 0.5993548387096774,
+     "mcc": 0.22176188108297246
+    },
+    "LightGBM|S4-only": {
+     "trees": [
+      9,
+      49,
+      33,
+      84
+     ],
+     "auroc": 0.571468553836312,
+     "ci": [
+      0.5353079506013176,
+      0.6028917891834144
+     ],
+     "thr": 0.4883966670076979,
+     "acc": 0.5612903225806452,
+     "mcc": 0.12825210746997276
+    },
+    "LightGBM|TW-only": {
+     "trees": [
+      43,
+      66,
+      15,
+      44
+     ],
+     "auroc": 0.49118221315954314,
+     "ci": [
+      0.4400352023895197,
+      0.545993065564628
+     ],
+     "thr": 0.4960531623996004,
+     "acc": 0.48129032258064514,
+     "mcc": -0.030553214230445738
+    },
+    "LightGBM|Full+S7+S8": {
+     "trees": [
+      71,
+      130,
+      147,
+      168
+     ],
+     "auroc": 0.6268525182253142,
+     "ci": [
+      0.5832682850203462,
+      0.7022318894434031
+     ],
+     "thr": 0.4786150063785934,
+     "acc": 0.5625806451612904,
+     "mcc": 0.12322485379614408
+    },
+    "SOX-return rule": {
+     "auroc": 0.4249496888035931,
+     "ci": [
+      0.3960627386050076,
+      0.45667164468502786
+     ]
+    },
+    "stock base-rate": {
+     "auroc": 0.4658891754294777,
+     "ci": [
+      0.4339268489683468,
+      0.49607490402567317
+     ]
+    }
+   },
+   "majority_acc": 0.512258064516129,
+   "paired": {
+    "Full minus S4-only": {
+     "diff": 0.06615089360681292,
+     "ci": [
+      0.03029735719646149,
+      0.12844542110746565
+     ],
+     "p_boot": 0.0
+    },
+    "Full minus TW-only": {
+     "diff": 0.1464372342835818,
+     "ci": [
+      0.0696500051925027,
+      0.23896740301609803
+     ],
+     "p_boot": 0.0
+    },
+    "Full minus SOX-return rule": {
+     "diff": 0.21266975863953186,
+     "ci": [
+      0.14052665007470483,
+      0.3032336723650182
+     ],
+     "p_boot": 0.0
+    },
+    "Full+S7+S8 minus Full": {
+     "diff": -0.01076692921781075,
+     "ci": [
+      -0.028336949878514102,
+      0.005785792381953716
+     ],
+     "p_boot": 0.867
+    },
+    "Full+S7+S8 minus S4-only": {
+     "diff": 0.05538396438900217,
+     "ci": [
+      0.024719995298627152,
+      0.11935416535230815
+     ],
+     "p_boot": 0.0
+    }
+   },
+   "walk_forward_2023_2026": {
+    "Full": 0.5981254884619316,
+    "S4-only": 0.566673959176178,
+    "TW-only": 0.5191090513917682
+   },
+   "consistent_with_walk_forward": {
+    "Full": true,
+    "S4-only": true,
+    "TW-only": true
+   }
+  }
+ }
+}

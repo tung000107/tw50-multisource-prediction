@@ -1,0 +1,806 @@
+{
+ "rows": {
+  "SOX-return rule": {
+   "auroc": 0.576543699969742,
+   "ci": [
+    0.5593418579763878,
+    0.5931953293093645
+   ],
+   "acc": 0.5234029306472773,
+   "mcc": 0.0,
+   "n": 44973,
+   "group": "ours",
+   "by_year": {
+    "2023": 0.5847580422040832,
+    "2024": 0.5777903541545637,
+    "2025": 0.564724949337763,
+    "2026": 0.5767914093538409
+   }
+  },
+  "LR Full (S1-S5)": {
+   "auroc": 0.5928873534515231,
+   "ci": [
+    0.577865092862937,
+    0.6088443607809491
+   ],
+   "acc": 0.566317568318769,
+   "mcc": 0.12943790670870237,
+   "n": 44973,
+   "group": "ours",
+   "by_year": {
+    "2023": 0.5864391788507024,
+    "2024": 0.5860340360624775,
+    "2025": 0.5965880453172303,
+    "2026": 0.6096770458404004
+   }
+  },
+  "LightGBM Full (S1-S5)": {
+   "auroc": 0.5903845336566452,
+   "ci": [
+    0.5753254909421422,
+    0.6061207820667153
+   ],
+   "acc": 0.5676517021323906,
+   "mcc": 0.12785871029755716,
+   "n": 44973,
+   "group": "ours",
+   "by_year": {
+    "2023": 0.5937821084000904,
+    "2024": 0.5877991508880708,
+    "2025": 0.590351052315728,
+    "2026": 0.5944060777346478
+   }
+  },
+  "XGBoost Full (S1-S5)": {
+   "auroc": 0.5939889848180698,
+   "ci": [
+    0.5797323960680133,
+    0.6094460968028348
+   ],
+   "acc": 0.5685855958019256,
+   "mcc": 0.13009296861030709,
+   "n": 44973,
+   "group": "ours",
+   "by_year": {
+    "2023": 0.5939385062501921,
+    "2024": 0.5886673568224932,
+    "2025": 0.5905171876702946,
+    "2026": 0.6088875108870095
+   }
+  },
+  "LSTM Full (S1-S5)": {
+   "auroc": 0.593318430645176,
+   "ci": [
+    0.5785474592868478,
+    0.6094463338390479
+   ],
+   "acc": 0.5669179285348988,
+   "mcc": 0.12891599249600413,
+   "n": 44973,
+   "group": "ours",
+   "by_year": {
+    "2023": 0.5970229742158959,
+    "2024": 0.5958490017978926,
+    "2025": 0.5898096194669227,
+    "2026": 0.5965492196494222
+   }
+  },
+  "Transformer Full (S1-S5)": {
+   "auroc": 0.5945097376668034,
+   "ci": [
+    0.5798793025045769,
+    0.609727502472303
+   ],
+   "acc": 0.5670291063527005,
+   "mcc": 0.13035832619588072,
+   "n": 44973,
+   "group": "ours",
+   "by_year": {
+    "2023": 0.5987412469373957,
+    "2024": 0.5941624105527762,
+    "2025": 0.5920790341236277,
+    "2026": 0.6002694619096162
+   }
+  },
+  "Ensemble LightGBM+LSTM (S1-S5)": {
+   "auroc": 0.5979909347247053,
+   "ci": [
+    0.5832432260399656,
+    0.6134643972259299
+   ],
+   "acc": 0.573633068730127,
+   "mcc": 0.14105889269471214,
+   "n": 44973,
+   "group": "ours",
+   "by_year": {
+    "2023": 0.6022062194286519,
+    "2024": 0.5974829778388394,
+    "2025": 0.5945584271094156,
+    "2026": 0.600636914680053
+   }
+  },
+  "LightGBM All9 (S1-S9)": {
+   "auroc": 0.6302470307080386,
+   "ci": [
+    0.6158075642991045,
+    0.645200029058327
+   ],
+   "acc": 0.5951348586929935,
+   "mcc": 0.18507347800269922,
+   "n": 44973,
+   "group": "ours",
+   "by_year": {
+    "2023": 0.6344808623557555,
+    "2024": 0.6394685616583563,
+    "2025": 0.6231200505253893,
+    "2026": 0.6191778470372303
+   }
+  },
+  "LightGBM Full+S7+S8": {
+   "auroc": 0.628910407681073,
+   "ci": [
+    0.6144860761144607,
+    0.6439786380682254
+   ],
+   "acc": 0.5949569741845107,
+   "mcc": 0.184645029997056,
+   "n": 44973,
+   "group": "ours",
+   "by_year": {
+    "2023": 0.6328421629306579,
+    "2024": 0.6358278978973191,
+    "2025": 0.6268309373004927,
+    "2026": 0.620083897094358
+   }
+  },
+  "LSTM All9 (S1-S9)": {
+   "auroc": 0.6152593002055124,
+   "ci": [
+    0.6005874944771451,
+    0.6297302928988392
+   ],
+   "acc": 0.5842839036755386,
+   "mcc": 0.16283246072049734,
+   "n": 44973,
+   "group": "ours",
+   "by_year": {
+    "2023": 0.6329870609388404,
+    "2024": 0.6163138382667545,
+    "2025": 0.5992590931798288,
+    "2026": 0.6239953941289241
+   }
+  },
+  "Transformer All9 (S1-S9)": {
+   "auroc": 0.6239949442072916,
+   "ci": [
+    0.6096246685511622,
+    0.6391630123539384
+   ],
+   "acc": 0.5884864251884464,
+   "mcc": 0.1729142600511888,
+   "n": 44973,
+   "group": "ours",
+   "by_year": {
+    "2023": 0.6368285691077671,
+    "2024": 0.6316685710195126,
+    "2025": 0.6125395287333224,
+    "2026": 0.6205503721538024
+   }
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final)": {
+   "auroc": 0.6306515477979021,
+   "ci": [
+    0.6157948521528138,
+    0.6457818336790185
+   ],
+   "acc": 0.5922887065572677,
+   "mcc": 0.17929888217930506,
+   "n": 44973,
+   "group": "ours",
+   "by_year": {
+    "2023": 0.6422451068453118,
+    "2024": 0.6354032593343117,
+    "2025": 0.6192870074018041,
+    "2026": 0.6265051336098597
+   }
+  },
+  "CausalStock v2 (price-only, 11)": {
+   "auroc": 0.5130161482271018,
+   "ci": [
+    0.5046606748725756,
+    0.5206165696524577
+   ],
+   "acc": 0.5171861442968698,
+   "mcc": 0.010288654098309351,
+   "n": 44949,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.5142301848748244,
+    "2024": 0.5142383193878881,
+    "2025": 0.5084610788815579,
+    "2026": 0.5152215994952947
+   }
+  },
+  "CausalStock v2 + S1-S5": {
+   "auroc": 0.5690960330411454,
+   "ci": [
+    0.5580939446045582,
+    0.5804804725340749
+   ],
+   "acc": 0.553411900995834,
+   "mcc": 0.09847701245295037,
+   "n": 44887,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.562425405293697,
+    "2024": 0.5684980939002493,
+    "2025": 0.5684869423496766,
+    "2026": 0.5821422000262846
+   }
+  },
+  "CausalStock v2 + All9": {
+   "auroc": 0.5497015758170458,
+   "ci": [
+    0.5387058997564537,
+    0.5600849683506767
+   ],
+   "acc": 0.5397108294160893,
+   "mcc": 0.06957179734867706,
+   "n": 44887,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.5258071037833245,
+    "2024": 0.5483792586945379,
+    "2025": 0.5524921648311316,
+    "2026": 0.577567407018005
+   }
+  },
+  "CausalStock v2 + S1-S5, tuned": {
+   "auroc": 0.5708123055943853,
+   "ci": [
+    0.558655959733156,
+    0.5831340311808199
+   ],
+   "acc": 0.5518747075990822,
+   "mcc": 0.0946029029459377,
+   "n": 44887,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.5613458085488366,
+    "2024": 0.5761714085808816,
+    "2025": 0.569546148433575,
+    "2026": 0.5805973978183729
+   }
+  },
+  "CausalStock v2 + All9, tuned": {
+   "auroc": 0.5843737030506835,
+   "ci": [
+    0.5721675826589214,
+    0.5962308149440965
+   ],
+   "acc": 0.5662886804642769,
+   "mcc": 0.12474048504286406,
+   "n": 44887,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.5550502761869351,
+    "2024": 0.6047069775935062,
+    "2025": 0.5901174621592011,
+    "2026": 0.6003102115915363
+   }
+  },
+  "ALSTM official (11 price features)": {
+   "auroc": 0.5347712462840508,
+   "ci": [
+    0.5262268544619128,
+    0.5440893120358865
+   ],
+   "acc": 0.5306645280580988,
+   "mcc": 0.04873886154814488,
+   "n": 44889,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.5338008823127495,
+    "2024": 0.5401303070103105,
+    "2025": 0.5313405250292916,
+    "2026": 0.5240472603105879
+   }
+  },
+  "AdvALSTM official (11 price features)": {
+   "auroc": 0.5304143570663169,
+   "ci": [
+    0.5220499381973626,
+    0.5385739308686364
+   ],
+   "acc": 0.5272783978257479,
+   "mcc": 0.0417442051103941,
+   "n": 44889,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.5321321290324896,
+    "2024": 0.534754676443556,
+    "2025": 0.5252502263787326,
+    "2026": 0.523507019395007
+   }
+  },
+  "LSTM official (11 price features)": {
+   "auroc": 0.5338161478699587,
+   "ci": [
+    0.5242989348362529,
+    0.5432876336332935
+   ],
+   "acc": 0.5307570802465016,
+   "mcc": 0.05043462200057826,
+   "n": 44949,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.5307314202383306,
+    "2024": 0.5471024093457901,
+    "2025": 0.5320938256046914,
+    "2026": 0.5236456207632403
+   }
+  },
+  "ALSTM official (our 45 features)": {
+   "auroc": 0.5840188642450338,
+   "ci": [
+    0.5702188718582547,
+    0.59860711373185
+   ],
+   "acc": 0.5675156818536956,
+   "mcc": 0.13162346569728858,
+   "n": 44797,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.5895135073216409,
+    "2024": 0.5933187741930214,
+    "2025": 0.5830040780890737,
+    "2026": 0.5715140961869686
+   }
+  },
+  "AdvALSTM official (our 45 features)": {
+   "auroc": 0.5840372017910022,
+   "ci": [
+    0.571065567615742,
+    0.5982056534214446
+   ],
+   "acc": 0.5646806705806192,
+   "mcc": 0.12370757897580753,
+   "n": 44797,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.58425634056406,
+    "2024": 0.5972033595859283,
+    "2025": 0.5859393305546319,
+    "2026": 0.5667063167256108
+   }
+  },
+  "LSTM official (our 45 features)": {
+   "auroc": 0.5815690873336572,
+   "ci": [
+    0.567820983833846,
+    0.5960892392525727
+   ],
+   "acc": 0.5674248668879631,
+   "mcc": 0.12927650658627987,
+   "n": 44887,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.5775414706738324,
+    "2024": 0.5859139211898585,
+    "2025": 0.5850611721573127,
+    "2026": 0.5779241424628729
+   }
+  },
+  "ALSTM official (all nine sources, 74 features)": {
+   "auroc": 0.6161267486543007,
+   "ci": [
+    0.601355260600486,
+    0.631347020804707
+   ],
+   "acc": 0.5924503873027211,
+   "mcc": 0.18026990594876802,
+   "n": 44797,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.6310854218355184,
+    "2024": 0.6191454350929924,
+    "2025": 0.5994771554480496,
+    "2026": 0.6148127344377537
+   }
+  },
+  "AdvALSTM official (all nine sources, 74 features)": {
+   "auroc": 0.6078788800374562,
+   "ci": [
+    0.5935597132013087,
+    0.6224414611780755
+   ],
+   "acc": 0.5911779806683484,
+   "mcc": 0.17717261974676263,
+   "n": 44797,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.6183174138123311,
+    "2024": 0.6087042828754087,
+    "2025": 0.5914561694095424,
+    "2026": 0.6159894883260693
+   }
+  },
+  "LSTM official (all nine sources, 74 features)": {
+   "auroc": 0.6083348036237187,
+   "ci": [
+    0.5948004108291286,
+    0.6234973020336075
+   ],
+   "acc": 0.5879430570098246,
+   "mcc": 0.1699535146134583,
+   "n": 44887,
+   "group": "SOTA architecture",
+   "by_year": {
+    "2023": 0.6240703499744087,
+    "2024": 0.5941095908450789,
+    "2025": 0.5983747084586741,
+    "2026": 0.6124867393875674
+   }
+  }
+ },
+ "n_rows": 44973,
+ "sota_models": [
+  "CausalStock v2 (price-only, 11)",
+  "CausalStock v2 + S1-S5",
+  "CausalStock v2 + All9",
+  "CausalStock v2 + S1-S5, tuned",
+  "CausalStock v2 + All9, tuned",
+  "ALSTM official (11 price features)",
+  "AdvALSTM official (11 price features)",
+  "LSTM official (11 price features)",
+  "ALSTM official (our 45 features)",
+  "AdvALSTM official (our 45 features)",
+  "LSTM official (our 45 features)",
+  "ALSTM official (all nine sources, 74 features)",
+  "AdvALSTM official (all nine sources, 74 features)",
+  "LSTM official (all nine sources, 74 features)"
+ ],
+ "our_models": [
+  "SOX-return rule",
+  "LR Full (S1-S5)",
+  "LightGBM Full (S1-S5)",
+  "XGBoost Full (S1-S5)",
+  "LSTM Full (S1-S5)",
+  "Transformer Full (S1-S5)",
+  "Ensemble LightGBM+LSTM (S1-S5)",
+  "LightGBM All9 (S1-S9)",
+  "LightGBM Full+S7+S8",
+  "LSTM All9 (S1-S9)",
+  "Transformer All9 (S1-S9)",
+  "Ensemble LightGBM+LSTM All9 (ours, final)"
+ ],
+ "final_model": "Ensemble LightGBM+LSTM All9 (ours, final)",
+ "paired": {
+  "LightGBM Full (S1-S5) minus CausalStock v2 (price-only, 11)": {
+   "diff": 0.07736838542954338,
+   "ci": [
+    0.061555156494212664,
+    0.09480645437604579
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44949
+  },
+  "LightGBM Full (S1-S5) minus CausalStock v2 + S1-S5": {
+   "diff": 0.021288500615499806,
+   "ci": [
+    0.009617462194194917,
+    0.03352097873293683
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44887
+  },
+  "LightGBM Full (S1-S5) minus CausalStock v2 + All9": {
+   "diff": 0.04068295783959941,
+   "ci": [
+    0.028066857411158868,
+    0.05538619959992374
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44887
+  },
+  "LightGBM Full (S1-S5) minus CausalStock v2 + S1-S5, tuned": {
+   "diff": 0.01957222806225989,
+   "ci": [
+    0.008542527769724282,
+    0.029481495236823314
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44887
+  },
+  "LightGBM Full (S1-S5) minus CausalStock v2 + All9, tuned": {
+   "diff": 0.006010830605961748,
+   "ci": [
+    -0.006810980065708747,
+    0.018781616769432415
+   ],
+   "p_boot": 0.19,
+   "same_sign_years": 2,
+   "n": 44887
+  },
+  "LightGBM Full (S1-S5) minus ALSTM official (11 price features)": {
+   "diff": 0.05561328737259441,
+   "ci": [
+    0.03795010313474846,
+    0.072151683793202
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44889
+  },
+  "LightGBM Full (S1-S5) minus AdvALSTM official (11 price features)": {
+   "diff": 0.05997017659032833,
+   "ci": [
+    0.04214966675591655,
+    0.07657902985613643
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44889
+  },
+  "LightGBM Full (S1-S5) minus LSTM official (11 price features)": {
+   "diff": 0.05656838578668655,
+   "ci": [
+    0.0398797869576794,
+    0.07309031826155529
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44949
+  },
+  "LightGBM Full (S1-S5) minus ALSTM official (our 45 features)": {
+   "diff": 0.00636566941161143,
+   "ci": [
+    -0.004224597777150158,
+    0.016858013721349447
+   ],
+   "p_boot": 0.127,
+   "same_sign_years": 3,
+   "n": 44797
+  },
+  "LightGBM Full (S1-S5) minus AdvALSTM official (our 45 features)": {
+   "diff": 0.006347331865643069,
+   "ci": [
+    -0.004604537348602458,
+    0.01667263941399147
+   ],
+   "p_boot": 0.151,
+   "same_sign_years": 3,
+   "n": 44797
+  },
+  "LightGBM Full (S1-S5) minus LSTM official (our 45 features)": {
+   "diff": 0.00881544632298803,
+   "ci": [
+    -0.0018535435451548122,
+    0.01879229629479741
+   ],
+   "p_boot": 0.046,
+   "same_sign_years": 4,
+   "n": 44887
+  },
+  "LightGBM Full (S1-S5) minus ALSTM official (all nine sources, 74 features)": {
+   "diff": -0.0257422149976555,
+   "ci": [
+    -0.03985032652818618,
+    -0.012616874021225863
+   ],
+   "p_boot": 1.0,
+   "same_sign_years": 4,
+   "n": 44797
+  },
+  "LightGBM Full (S1-S5) minus AdvALSTM official (all nine sources, 74 features)": {
+   "diff": -0.017494346380810932,
+   "ci": [
+    -0.03144994861882504,
+    -0.003841197210729312
+   ],
+   "p_boot": 0.995,
+   "same_sign_years": 4,
+   "n": 44797
+  },
+  "LightGBM Full (S1-S5) minus LSTM official (all nine sources, 74 features)": {
+   "diff": -0.017950269967073496,
+   "ci": [
+    -0.0316391046665231,
+    -0.005932957095231126
+   ],
+   "p_boot": 0.998,
+   "same_sign_years": 4,
+   "n": 44887
+  },
+  "LightGBM Full (S1-S5) minus SOX-return rule": {
+   "diff": 0.013840833686903253,
+   "ci": [
+    0.0007150770520723967,
+    0.02686187493114537
+   ],
+   "p_boot": 0.023,
+   "same_sign_years": 4,
+   "n": 44973
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus CausalStock v2 (price-only, 11)": {
+   "diff": 0.11763539957080027,
+   "ci": [
+    0.10245728337412234,
+    0.13463284087231023
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44949
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus CausalStock v2 + S1-S5": {
+   "diff": 0.06155551475675669,
+   "ci": [
+    0.05028894612031956,
+    0.07457979468823352
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44887
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus CausalStock v2 + All9": {
+   "diff": 0.0809499719808563,
+   "ci": [
+    0.068735309982791,
+    0.0959309758739731
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44887
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus CausalStock v2 + S1-S5, tuned": {
+   "diff": 0.059839242203516774,
+   "ci": [
+    0.04848754300566757,
+    0.073092436271008
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44887
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus CausalStock v2 + All9, tuned": {
+   "diff": 0.04627784474721863,
+   "ci": [
+    0.03705259330883222,
+    0.057818420910418236
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44887
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus ALSTM official (11 price features)": {
+   "diff": 0.0958803015138513,
+   "ci": [
+    0.07999154077392702,
+    0.11273848957405745
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44889
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus AdvALSTM official (11 price features)": {
+   "diff": 0.10023719073158521,
+   "ci": [
+    0.0852431784222363,
+    0.11606933595596275
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44889
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus LSTM official (11 price features)": {
+   "diff": 0.09683539992794343,
+   "ci": [
+    0.08209421419160096,
+    0.11304113845301997
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44949
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus ALSTM official (our 45 features)": {
+   "diff": 0.046632683552868315,
+   "ci": [
+    0.035011708975283315,
+    0.05881301150306962
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44797
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus AdvALSTM official (our 45 features)": {
+   "diff": 0.046614346006899954,
+   "ci": [
+    0.034731639730538076,
+    0.05867818704108141
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44797
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus LSTM official (our 45 features)": {
+   "diff": 0.049082460464244915,
+   "ci": [
+    0.03705226317523663,
+    0.0622600313414079
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44887
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus ALSTM official (all nine sources, 74 features)": {
+   "diff": 0.014524799143601386,
+   "ci": [
+    0.007599744280849255,
+    0.021925512314328544
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44797
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus AdvALSTM official (all nine sources, 74 features)": {
+   "diff": 0.022772667760445953,
+   "ci": [
+    0.014967641746629862,
+    0.030998282837396498
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44797
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus LSTM official (all nine sources, 74 features)": {
+   "diff": 0.02231674417418339,
+   "ci": [
+    0.015006060991329334,
+    0.02997883831069614
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44887
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus LightGBM Full (S1-S5)": {
+   "diff": 0.040267014141256885,
+   "ci": [
+    0.029024618002437424,
+    0.05295640712270683
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44973
+  },
+  "Ensemble LightGBM+LSTM All9 (ours, final) minus SOX-return rule": {
+   "diff": 0.05410784782816014,
+   "ci": [
+    0.04086942762652836,
+    0.06830397536762275
+   ],
+   "p_boot": 0.0,
+   "same_sign_years": 4,
+   "n": 44973
+  }
+ },
+ "information_vs_architecture": {
+  "CausalStock v2 (price-only, 11)": 0.5130161482271018,
+  "CausalStock v2 + S1-S5": 0.5690960330411454,
+  "CausalStock v2 + All9": 0.5497015758170458,
+  "CausalStock v2 + S1-S5, tuned": 0.5708123055943853,
+  "CausalStock v2 + All9, tuned": 0.5843737030506835,
+  "ALSTM official (11 price features)": 0.5347712462840508,
+  "AdvALSTM official (11 price features)": 0.5304143570663169,
+  "LSTM official (11 price features)": 0.5338161478699587,
+  "ALSTM official (our 45 features)": 0.5840188642450338,
+  "AdvALSTM official (our 45 features)": 0.5840372017910022,
+  "LSTM official (our 45 features)": 0.5815690873336572,
+  "ALSTM official (all nine sources, 74 features)": 0.6161267486543007,
+  "AdvALSTM official (all nine sources, 74 features)": 0.6078788800374562,
+  "LSTM official (all nine sources, 74 features)": 0.6083348036237187
+ }
+}

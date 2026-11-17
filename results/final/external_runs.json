@@ -1,0 +1,650 @@
+{
+ "hwang_repo_own_code_acl18_no_news": {
+  "their label (column 6 = daily dollar change)": {
+   "test_acc": 0.6186,
+   "test_mcc": 0.2395,
+   "epochs": 100,
+   "seed": 0,
+   "config": "experiments/configs/ablations/no_news.yaml (paper settings: lr 1e-5, bce 0.01), device cuda"
+  },
+  "corrected label (movement > 0)": {
+   "test_acc": 0.5053,
+   "test_mcc": 0.0085,
+   "epochs": 11,
+   "seed": 0,
+   "config": "experiments/configs/ablations/no_news.yaml (paper settings: lr 1e-5, bce 0.01), device cuda"
+  }
+ },
+ "adv_alstm_official_kdd17": {
+  "ALSTM (official code, hyperparameters file)": {
+   "test_acc": 0.519059205190592,
+   "test_mcc": 0.021182533811876958,
+   "published_in_causalstock_table1": [
+    51.66,
+    0.0316
+   ],
+   "published_in_adv_alstm_paper": "see Feng et al. 2019 Table 2"
+  },
+  "LSTM (official code)": {
+   "test_acc": 0.5159502568261692,
+   "test_mcc": 0.020654080452120395,
+   "published_in_causalstock_table1": [
+    51.18,
+    0.0187
+   ]
+  },
+  "Adv-ALSTM (official code, saved ALSTM init)": {
+   "test_acc": 0.5319005136523385,
+   "test_mcc": 0.053659640750641106,
+   "published_in_causalstock_table1": [
+    51.69,
+    0.0333
+   ]
+  },
+  "note": "Adv-ALSTM paper (Feng et al. IJCAI 2019) reports KDD17 Adv-ALSTM 53.05 / 0.0523; CausalStock Table 1 lists 51.69 / 0.0333."
+ },
+ "notes": "External code executed after a manual security audit (imports, network, subprocess, eval/exec, pickle, shell scripts): no suspicious behaviour found. Hwang repo run with our one-line audit switch USE_MOVEMENT_LABEL=1 in src/data/dataset.py; everything else unchanged.",
+ "adv_alstm_official_tw50": {
+  "ALSTM": {
+   "2023": {
+    "test_acc": 0.5263598326359833,
+    "test_mcc": 0.0404413082115567,
+    "val_acc": 0.5456179041084701,
+    "majority_acc": 0.518326359832636,
+    "n_test": 11950
+   },
+   "2024": {
+    "test_acc": 0.5396772858916011,
+    "test_mcc": 0.06252788930663862,
+    "val_acc": 0.5326359832635983,
+    "majority_acc": 0.5434333415984792,
+    "n_test": 12099
+   },
+   "2025": {
+    "test_acc": 0.5363146997929606,
+    "test_mcc": 0.06305172919700454,
+    "val_acc": 0.5520066197765825,
+    "majority_acc": 0.5236839937391877,
+    "n_test": 12139
+   },
+   "2026": {
+    "test_acc": 0.5154650898339778,
+    "test_mcc": 0.030794655570563524,
+    "val_acc": 0.5389648033126294,
+    "majority_acc": 0.5021590909090909,
+    "n_test": 8800
+   },
+   "mean": {
+    "test_acc": 0.5294542270386307,
+    "test_mcc": 0.049203895571440844,
+    "majority_acc": 0.5219006965198485
+   }
+  },
+  "AdvALSTM": {
+   "2023": {
+    "test_acc": 0.5301255230125523,
+    "test_mcc": 0.04976525878348913,
+    "val_acc": 0.5430041656456751,
+    "majority_acc": 0.518326359832636,
+    "n_test": 11950
+   },
+   "2024": {
+    "test_acc": 0.5346297062474141,
+    "test_mcc": 0.0553296944779261,
+    "val_acc": 0.5321338912133892,
+    "majority_acc": 0.5434333415984792,
+    "n_test": 12099
+   },
+   "2025": {
+    "test_acc": 0.5363975155279503,
+    "test_mcc": 0.0595692497965838,
+    "val_acc": 0.5523376086057096,
+    "majority_acc": 0.5236839937391877,
+    "n_test": 12139
+   },
+   "2026": {
+    "test_acc": 0.5164885148965204,
+    "test_mcc": 0.03343347063653192,
+    "val_acc": 0.5357349896480331,
+    "majority_acc": 0.5021590909090909,
+    "n_test": 8800
+   },
+   "mean": {
+    "test_acc": 0.5294103149211093,
+    "test_mcc": 0.04952441842363274,
+    "majority_acc": 0.5219006965198485
+   }
+  },
+  "LSTM": {
+   "2023": {
+    "test_acc": 0.5247698744769874,
+    "test_mcc": 0.036453078820648716,
+    "val_acc": 0.5461582335207366,
+    "majority_acc": 0.518326359832636,
+    "n_test": 11950
+   },
+   "2024": {
+    "test_acc": 0.5470855725506407,
+    "test_mcc": 0.06971575781099539,
+    "val_acc": 0.5312133891213389,
+    "majority_acc": 0.5434333415984792,
+    "n_test": 12099
+   },
+   "2025": {
+    "test_acc": 0.531809555243832,
+    "test_mcc": 0.05302787637914003,
+    "val_acc": 0.554278627532038,
+    "majority_acc": 0.5236839937391877,
+    "n_test": 12139
+   },
+   "2026": {
+    "test_acc": 0.5180681818181818,
+    "test_mcc": 0.03611559589897912,
+    "val_acc": 0.5412987870286328,
+    "majority_acc": 0.5021590909090909,
+    "n_test": 8800
+   },
+   "mean": {
+    "test_acc": 0.5304332960224105,
+    "test_mcc": 0.048828077227440814,
+    "majority_acc": 0.5219006965198485
+   }
+  },
+  "note": "official code, KDD17 hyper-parameters, walk-forward by year (validation = previous year), label = our y_up (+1 up / -1 non-up), 11 'ourpped' features"
+ },
+ "stocknet_official_acl18": {
+  "fund": {
+   "r1": {
+    "test_acc": 0.5109126984126984,
+    "test_mcc": -0.04101251613055401,
+    "test_loss": 1.0965352,
+    "n_epochs_done": 15,
+    "last_train_epoch_acc": 0.579637,
+    "dev_acc_last": 0.503049,
+    "dev_acc_max": 0.535061,
+    "exit_code": 0
+   },
+   "mean": {
+    "test_acc": 0.5109126984126984,
+    "test_mcc": -0.04101251613055401,
+    "n_runs": 1,
+    "n_mcc_defined": 1,
+    "note": "test_mcc=None means the run predicted a single class on the whole test set (MCC undefined); mean MCC is over the defined runs only"
+   }
+  },
+  "hedge": {
+   "r1": {
+    "test_acc": 0.47619047619047616,
+    "test_mcc": -0.02781499471917049,
+    "test_loss": 1.1119065,
+    "n_epochs_done": 15,
+    "last_train_epoch_acc": 0.582056,
+    "dev_acc_last": 0.51372,
+    "dev_acc_max": 0.565549,
+    "exit_code": 0
+   },
+   "r2": {
+    "test_acc": 0.4255952380952381,
+    "test_mcc": null,
+    "test_loss": 1.0580059,
+    "n_epochs_done": 15,
+    "last_train_epoch_acc": 0.509274,
+    "dev_acc_last": 0.512195,
+    "dev_acc_max": 0.515244,
+    "exit_code": 0
+   },
+   "r3": {
+    "test_acc": 0.5109126984126984,
+    "test_mcc": -0.04619641216154934,
+    "test_loss": 1.108178,
+    "n_epochs_done": 15,
+    "last_train_epoch_acc": 0.584677,
+    "dev_acc_last": 0.504573,
+    "dev_acc_max": 0.560976,
+    "exit_code": 0
+   },
+   "mean": {
+    "test_acc": 0.4708994708994709,
+    "test_mcc": -0.037005703440359916,
+    "n_runs": 3,
+    "n_mcc_defined": 2,
+    "note": "test_mcc=None means the run predicted a single class on the whole test set (MCC undefined); mean MCC is over the defined runs only"
+   }
+  },
+  "tech": {
+   "r1": {
+    "test_acc": 0.5426587301587301,
+    "test_mcc": -0.05897852601986336,
+    "test_loss": 1.0463543,
+    "n_epochs_done": 15,
+    "last_train_epoch_acc": 0.530242,
+    "dev_acc_last": 0.498476,
+    "dev_acc_max": 0.550305,
+    "exit_code": 0
+   },
+   "mean": {
+    "test_acc": 0.5426587301587301,
+    "test_mcc": -0.05897852601986336,
+    "n_runs": 1,
+    "n_mcc_defined": 1,
+    "note": "test_mcc=None means the run predicted a single class on the whole test set (MCC undefined); mean MCC is over the defined runs only"
+   }
+  },
+  "counts": {
+   "train": {
+    "n": 4987,
+    "up_share": 0.5173450972528574
+   },
+   "dev": {
+    "n": 656,
+    "up_share": 0.4878048780487805
+   },
+   "test": {
+    "n": 1008,
+    "up_share": 0.5744047619047619
+   },
+   "note": "samples yielded by the released DataPipe (batch_gen_by_stocks, no partial-batch drop); filters: movement in [-0.5%, 0.55%) dropped, window days without tweets dropped"
+  },
+  "test_majority_acc": 0.5744047619047619,
+  "published": {
+   "HedgeFundAnalyst": {
+    "acc": 0.5823,
+    "mcc": 0.080796
+   },
+   "FundamentalAnalyst": {
+    "acc": 0.5823,
+    "mcc": 0.071704
+   },
+   "TechnicalAnalyst": {
+    "acc": 0.5496,
+    "mcc": 0.016456
+   },
+   "IndependentAnalyst": {
+    "acc": 0.5754,
+    "mcc": 0.03661
+   },
+   "DiscriminativeAnalyst": {
+    "acc": 0.5615,
+    "mcc": 0.056493
+   },
+   "HAN": {
+    "acc": 0.5764,
+    "mcc": 0.0518
+   },
+   "RAND": {
+    "acc": 0.5089,
+    "mcc": -0.002266
+   },
+   "paper_sample_counts": {
+    "train": 20339,
+    "dev": 2555,
+    "test": 3720
+   },
+   "source": "Xu & Cohen 2018, Table 1 and Sec. 3 (verified from the PDF, homepages.inf.ed.ac.uk/scohen/acl18stock.pdf)"
+  },
+  "note": "official code (external/stocknet-code) + official dataset (external/stocknet-dataset), paper config.yml unchanged (hedge = HedgeFundAnalyst, alpha 0.5, 15 epochs, last checkpoint tested as in Main.py); Python-3 ports: file()->open, range->list, PEP479 return, 'is not'->'!='; our additions: MCC on test, per-run dirs, CPU thread cap. No seed in the code: runs differ by shuffle/init."
+ },
+ "adv_alstm_official_tw50_headtohead": {
+  "ALSTM official (11 price features)": {
+   "2023": {
+    "test_acc": 0.5281171548117155,
+    "test_mcc": 0.04505394511179269,
+    "val_acc": 0.5444743935309974,
+    "majority_acc": 0.518326359832636,
+    "n_test": 11950,
+    "auroc_from_scores": 0.5338008823127495
+   },
+   "2024": {
+    "test_acc": 0.54340091021928,
+    "test_mcc": 0.06622585170439971,
+    "val_acc": 0.5306276150627615,
+    "majority_acc": 0.5434333415984792,
+    "n_test": 12099,
+    "auroc_from_scores": 0.5401303070103105
+   },
+   "2025": {
+    "test_acc": 0.5304347826086957,
+    "test_mcc": 0.0493583986089915,
+    "val_acc": 0.5520066197765825,
+    "majority_acc": 0.5236839937391877,
+    "n_test": 12139,
+    "auroc_from_scores": 0.5313405250292916
+   },
+   "2026": {
+    "test_acc": 0.5170570843757107,
+    "test_mcc": 0.034812057128128515,
+    "val_acc": 0.5386335403726709,
+    "majority_acc": 0.5021590909090909,
+    "n_test": 8800,
+    "auroc_from_scores": 0.5240620773965728
+   },
+   "mean": {
+    "test_acc": 0.5297524830038505,
+    "test_mcc": 0.048862563138328104,
+    "majority_acc": 0.5219006965198485,
+    "auroc_from_scores": 0.5323334479372311
+   }
+  },
+  "AdvALSTM official (11 price features)": {
+   "2023": {
+    "test_acc": 0.5276987447698744,
+    "test_mcc": 0.04575274307183903,
+    "val_acc": 0.5417789757412399,
+    "majority_acc": 0.518326359832636,
+    "n_test": 11950,
+    "auroc_from_scores": 0.5321321290324896
+   },
+   "2024": {
+    "test_acc": 0.5408357467935457,
+    "test_mcc": 0.06154838660456658,
+    "val_acc": 0.5312133891213389,
+    "majority_acc": 0.5434333415984792,
+    "n_test": 12099,
+    "auroc_from_scores": 0.534754676443556
+   },
+   "2025": {
+    "test_acc": 0.5233954451345756,
+    "test_mcc": 0.029846379295892497,
+    "val_acc": 0.5502689284236657,
+    "majority_acc": 0.5236839937391877,
+    "n_test": 12139,
+    "auroc_from_scores": 0.5252502263787326
+   },
+   "2026": {
+    "test_acc": 0.5133045258130543,
+    "test_mcc": 0.0264639729898599,
+    "val_acc": 0.5378053830227744,
+    "majority_acc": 0.5021590909090909,
+    "n_test": 8800,
+    "auroc_from_scores": 0.5234429896419569
+   },
+   "mean": {
+    "test_acc": 0.5263086156277625,
+    "test_mcc": 0.0409028704905395,
+    "majority_acc": 0.5219006965198485,
+    "auroc_from_scores": 0.5288950053741838
+   }
+  },
+  "LSTM official (11 price features)": {
+   "2023": {
+    "test_acc": 0.5263598326359833,
+    "test_mcc": 0.043550339453902145,
+    "val_acc": 0.5465656318748472,
+    "majority_acc": 0.518326359832636,
+    "n_test": 11950,
+    "auroc_from_scores": 0.5307314202383306
+   },
+   "2024": {
+    "test_acc": 0.5446878875568417,
+    "test_mcc": 0.06835897232179107,
+    "val_acc": 0.5317154811715481,
+    "majority_acc": 0.5434333415984792,
+    "n_test": 12099,
+    "auroc_from_scores": 0.5471024093457901
+   },
+   "2025": {
+    "test_acc": 0.531809555243832,
+    "test_mcc": 0.05311767253634407,
+    "val_acc": 0.5541132699462588,
+    "majority_acc": 0.5236839937391877,
+    "n_test": 12139,
+    "auroc_from_scores": 0.5320938256046914
+   },
+   "2026": {
+    "test_acc": 0.5160227272727272,
+    "test_mcc": 0.0321191244784585,
+    "val_acc": 0.539235910553676,
+    "majority_acc": 0.5021590909090909,
+    "n_test": 8800,
+    "auroc_from_scores": 0.5236321813645388
+   },
+   "mean": {
+    "test_acc": 0.529720000677346,
+    "test_mcc": 0.04928652719762394,
+    "majority_acc": 0.5219006965198485,
+    "auroc_from_scores": 0.5333899591383378
+   }
+  },
+  "ALSTM official (our 45 features)": {
+   "2023": {
+    "test_acc": 0.5694560669456067,
+    "test_mcc": 0.13543390251596046,
+    "val_acc": 0.6102262517356857,
+    "majority_acc": 0.518326359832636,
+    "n_test": 11950,
+    "auroc_from_scores": 0.5895135073216409
+   },
+   "2024": {
+    "test_acc": 0.5745966073645015,
+    "test_mcc": 0.1434490878167364,
+    "val_acc": 0.5717991631799163,
+    "majority_acc": 0.5434333415984792,
+    "n_test": 12099,
+    "auroc_from_scores": 0.5933187741930214
+   },
+   "2025": {
+    "test_acc": 0.5624016563146997,
+    "test_mcc": 0.1277429758298592,
+    "val_acc": 0.5748448489863467,
+    "majority_acc": 0.5236839937391877,
+    "n_test": 12139,
+    "auroc_from_scores": 0.5830040780890737
+   },
+   "2026": {
+    "test_acc": 0.5621042937723034,
+    "test_mcc": 0.12747674243835114,
+    "val_acc": 0.5729192546583851,
+    "majority_acc": 0.5023335230506545,
+    "n_test": 8785,
+    "auroc_from_scores": 0.5715140961869686
+   },
+   "mean": {
+    "test_acc": 0.5671396560992779,
+    "test_mcc": 0.1335256771502268,
+    "majority_acc": 0.5219443045552394,
+    "auroc_from_scores": 0.5843376139476761
+   }
+  },
+  "AdvALSTM official (our 45 features)": {
+   "2023": {
+    "test_acc": 0.5574058577405858,
+    "test_mcc": 0.1091224629177643,
+    "val_acc": 0.6106346483704974,
+    "majority_acc": 0.518326359832636,
+    "n_test": 11950,
+    "auroc_from_scores": 0.58425634056406
+   },
+   "2024": {
+    "test_acc": 0.5768307819611088,
+    "test_mcc": 0.14242626508017395,
+    "val_acc": 0.5692050209205021,
+    "majority_acc": 0.5434333415984792,
+    "n_test": 12099,
+    "auroc_from_scores": 0.5972033595859283
+   },
+   "2025": {
+    "test_acc": 0.5686128364389234,
+    "test_mcc": 0.13380357947663138,
+    "val_acc": 0.5822093504344228,
+    "majority_acc": 0.5236839937391877,
+    "n_test": 12139,
+    "auroc_from_scores": 0.5859393305546319
+   },
+   "2026": {
+    "test_acc": 0.5523195579601704,
+    "test_mcc": 0.10516851853190749,
+    "val_acc": 0.5700207039337474,
+    "majority_acc": 0.5023335230506545,
+    "n_test": 8785,
+    "auroc_from_scores": 0.5667063167256108
+   },
+   "mean": {
+    "test_acc": 0.5637922585251971,
+    "test_mcc": 0.12263020650161928,
+    "majority_acc": 0.5219443045552394,
+    "auroc_from_scores": 0.5835263368575577
+   }
+  },
+  "LSTM official (our 45 features)": {
+   "2023": {
+    "test_acc": 0.5611715481171549,
+    "test_mcc": 0.12046890337034667,
+    "val_acc": 0.6115049295200847,
+    "majority_acc": 0.518326359832636,
+    "n_test": 11950,
+    "auroc_from_scores": 0.5775414706738324
+   },
+   "2024": {
+    "test_acc": 0.5708143861099628,
+    "test_mcc": 0.12509338643059512,
+    "val_acc": 0.5687866108786611,
+    "majority_acc": 0.5434333415984792,
+    "n_test": 12099,
+    "auroc_from_scores": 0.5859139211898585
+   },
+   "2025": {
+    "test_acc": 0.5694364221470418,
+    "test_mcc": 0.13496839692129564,
+    "val_acc": 0.5823894171145101,
+    "majority_acc": 0.5236839937391877,
+    "n_test": 12139,
+    "auroc_from_scores": 0.5850611721573127
+   },
+   "2026": {
+    "test_acc": 0.568497076693798,
+    "test_mcc": 0.1411198187111941,
+    "val_acc": 0.5733971449789587,
+    "majority_acc": 0.5023335230506545,
+    "n_test": 8785,
+    "auroc_from_scores": 0.5779241424628729
+   },
+   "mean": {
+    "test_acc": 0.5674798582669893,
+    "test_mcc": 0.13041262635835787,
+    "majority_acc": 0.5219443045552394,
+    "auroc_from_scores": 0.5816101766209691
+   }
+  },
+  "ALSTM official (all nine sources, 74 features)": {
+   "2023": {
+    "test_acc": 0.597071129707113,
+    "test_mcc": 0.1909503033296611,
+    "val_acc": 0.6370170709793351,
+    "majority_acc": 0.518326359832636,
+    "n_test": 11950,
+    "auroc_from_scores": 0.6310854218355184
+   },
+   "2024": {
+    "test_acc": 0.6005792304509723,
+    "test_mcc": 0.18765490733134002,
+    "val_acc": 0.5968200836820083,
+    "majority_acc": 0.5434333415984792,
+    "n_test": 12099,
+    "auroc_from_scores": 0.6191454350929924
+   },
+   "2025": {
+    "test_acc": 0.5845134575569358,
+    "test_mcc": 0.16498217110916624,
+    "val_acc": 0.6019031857674804,
+    "majority_acc": 0.5236839937391877,
+    "n_test": 12139,
+    "auroc_from_scores": 0.5994771554480496
+   },
+   "2026": {
+    "test_acc": 0.5858178887993554,
+    "test_mcc": 0.17171186905099953,
+    "val_acc": 0.5956107660455486,
+    "majority_acc": 0.5023335230506545,
+    "n_test": 8785,
+    "auroc_from_scores": 0.6148127344377537
+   },
+   "mean": {
+    "test_acc": 0.5919954266285942,
+    "test_mcc": 0.1788248127052917,
+    "majority_acc": 0.5219443045552394,
+    "auroc_from_scores": 0.6161301867035786
+   }
+  },
+  "AdvALSTM official (all nine sources, 74 features)": {
+   "2023": {
+    "test_acc": 0.5925523012552302,
+    "test_mcc": 0.18158053309146618,
+    "val_acc": 0.6392224128073185,
+    "majority_acc": 0.518326359832636,
+    "n_test": 11950,
+    "auroc_from_scores": 0.6183174138123311
+   },
+   "2024": {
+    "test_acc": 0.5995862639635913,
+    "test_mcc": 0.18203806002608577,
+    "val_acc": 0.594979079497908,
+    "majority_acc": 0.5434333415984792,
+    "n_test": 12099,
+    "auroc_from_scores": 0.6087042828754087
+   },
+   "2025": {
+    "test_acc": 0.5826086956521739,
+    "test_mcc": 0.16048734714067886,
+    "val_acc": 0.6057923045097228,
+    "majority_acc": 0.5236839937391877,
+    "n_test": 12139,
+    "auroc_from_scores": 0.5914561694095424
+   },
+   "2026": {
+    "test_acc": 0.589501554046276,
+    "test_mcc": 0.1790162880953756,
+    "val_acc": 0.5887370600414079,
+    "majority_acc": 0.5023335230506545,
+    "n_test": 8785,
+    "auroc_from_scores": 0.6159894883260693
+   },
+   "mean": {
+    "test_acc": 0.5910622037293178,
+    "test_mcc": 0.17578055708840162,
+    "majority_acc": 0.5219443045552394,
+    "auroc_from_scores": 0.6086168386058378
+   }
+  },
+  "LSTM official (all nine sources, 74 features)": {
+   "2023": {
+    "test_acc": 0.5867782426778243,
+    "test_mcc": 0.17081179088702308,
+    "val_acc": 0.6286971400635541,
+    "majority_acc": 0.518326359832636,
+    "n_test": 11950,
+    "auroc_from_scores": 0.6240703499744087
+   },
+   "2024": {
+    "test_acc": 0.5961967755270773,
+    "test_mcc": 0.17343779614897112,
+    "val_acc": 0.599581589958159,
+    "majority_acc": 0.5434333415984792,
+    "n_test": 12099,
+    "auroc_from_scores": 0.5941095908450789
+   },
+   "2025": {
+    "test_acc": 0.5867645845366779,
+    "test_mcc": 0.1682951652451862,
+    "val_acc": 0.6002480363786689,
+    "majority_acc": 0.5236839937391877,
+    "n_test": 12139,
+    "auroc_from_scores": 0.5983747084586741
+   },
+   "2026": {
+    "test_acc": 0.5797317436661699,
+    "test_mcc": 0.1594393907035656,
+    "val_acc": 0.5890750061886294,
+    "majority_acc": 0.5023335230506545,
+    "n_test": 8785,
+    "auroc_from_scores": 0.6124867393875674
+   },
+   "mean": {
+    "test_acc": 0.5873678366019373,
+    "test_mcc": 0.1679960357461865,
+    "majority_acc": 0.5219443045552394,
+    "auroc_from_scores": 0.6072603471664323
+   }
+  },
+  "note": "official Adv-ALSTM code (Feng et al. 2019), KDD17 hyper-parameters, walk-forward by year (validation = previous year), label y_up; models saved and re-scored with the code's test action to obtain raw scores for AUROC; 11 'ourpped' price features vs our 45 S1-S5 features"
+ }
+}

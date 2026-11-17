@@ -1,0 +1,26 @@
+# Whitelist: only code, result JSONs, final figures, and docs are tracked.
+/*
+!/.gitignore
+!/README.md
+!/pyproject.toml
+!/uv.lock
+
+!/scripts/
+/scripts/**/__pycache__/
+*.pyc
+
+!/results/
+/results/*
+!/results/final/
+/results/final/**
+!/results/final/**/
+!/results/final/**/*.json
+
+!/figures/
+/figures/*
+!/figures/final/
+
+!/final_present/
+/final_present/*
+!/final_present/0*.md
+!/final_present/dataset_README.md

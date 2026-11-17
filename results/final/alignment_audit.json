@@ -1,0 +1,1160 @@
+{
+ "T1_leak_test": {
+  "rule": "flag if a feature alone predicts the intraday leg with AUROC > 0.53 (all rows 2019-2026; orientation-free)",
+  "n_features": 74,
+  "n_flagged": 0,
+  "flagged": [],
+  "max_intraday_auroc": 0.5183644503000691,
+  "top10_by_y_up": [
+   {
+    "source": "S8",
+    "feature": "tx_night_ret",
+    "auroc_y_up": 0.6338737847006646,
+    "auroc_y_gap": 0.740825450415151,
+    "auroc_y_intra": 0.5030592701520901,
+    "auroc_y_up_if_one_row_later": 0.504561439688687,
+    "auroc_y_intra_if_one_row_later": 0.5017379168050062,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_sp500_ret",
+    "auroc_y_up": 0.59929281818959,
+    "auroc_y_gap": 0.6882090371985943,
+    "auroc_y_intra": 0.509795449116143,
+    "auroc_y_up_if_one_row_later": 0.5343168172166911,
+    "auroc_y_intra_if_one_row_later": 0.5236686800325847,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_nasdaq_ret",
+    "auroc_y_up": 0.5932308680838417,
+    "auroc_y_gap": 0.6825172979743321,
+    "auroc_y_intra": 0.5130494118979294,
+    "auroc_y_up_if_one_row_later": 0.5317683112932731,
+    "auroc_y_intra_if_one_row_later": 0.5242340574093858,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_sox_ret",
+    "auroc_y_up": 0.5911247450007331,
+    "auroc_y_gap": 0.6799937290266194,
+    "auroc_y_intra": 0.5135396699932853,
+    "auroc_y_up_if_one_row_later": 0.538131308942595,
+    "auroc_y_intra_if_one_row_later": 0.5346266339399334,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_vix_chg",
+    "auroc_y_up": 0.5895847359412688,
+    "auroc_y_gap": 0.6616014300602355,
+    "auroc_y_intra": 0.504618935809185,
+    "auroc_y_up_if_one_row_later": 0.5199129438299962,
+    "auroc_y_intra_if_one_row_later": 0.5251945726083267,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_tsm_adr_ret",
+    "auroc_y_up": 0.5717979472428104,
+    "auroc_y_gap": 0.6405432179866118,
+    "auroc_y_intra": 0.5122888519144926,
+    "auroc_y_up_if_one_row_later": 0.5587088165400489,
+    "auroc_y_intra_if_one_row_later": 0.5572414988473502,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_dxy_ret",
+    "auroc_y_up": 0.5578890361331312,
+    "auroc_y_gap": 0.5775021761190362,
+    "auroc_y_intra": 0.5148511503985373,
+    "auroc_y_up_if_one_row_later": 0.5252914290943423,
+    "auroc_y_intra_if_one_row_later": 0.5034586383532961,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S8",
+    "feature": "tx_night_volume_ratio",
+    "auroc_y_up": 0.5259732228896008,
+    "auroc_y_gap": 0.5245921209426103,
+    "auroc_y_intra": 0.5003740073870274,
+    "auroc_y_up_if_one_row_later": 0.5118548247645508,
+    "auroc_y_intra_if_one_row_later": 0.5022041774566948,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S8",
+    "feature": "foreign_fut_net_oi_chg",
+    "auroc_y_up": 0.5238743038713201,
+    "auroc_y_gap": 0.5171146168544839,
+    "auroc_y_intra": 0.5183644503000691,
+    "auroc_y_up_if_one_row_later": 0.5383018233262096,
+    "auroc_y_intra_if_one_row_later": 0.5179177212083611,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S7",
+    "feature": "ret1_minus_sector",
+    "auroc_y_up": 0.5234816963038021,
+    "auroc_y_gap": 0.5129166185624348,
+    "auroc_y_intra": 0.5174088225095039,
+    "auroc_y_up_if_one_row_later": 0.7836791999484806,
+    "auroc_y_intra_if_one_row_later": 0.7612361005171446,
+    "flag_predicts_intraday": false
+   }
+  ],
+  "look_ahead_scale": {
+   "note": "what one row of look-ahead does to a return feature, for scale",
+   "ret1_one_row_later_auroc_y_up": 0.9999890246963274,
+   "hl_range_one_row_later_auroc_y_intra": 0.5252478202160764
+  },
+  "table": [
+   {
+    "source": "S1",
+    "feature": "ret1",
+    "auroc_y_up": 0.513488047607099,
+    "auroc_y_gap": 0.5056765331157169,
+    "auroc_y_intra": 0.5080850580046663,
+    "auroc_y_up_if_one_row_later": 0.9999890246963274,
+    "auroc_y_intra_if_one_row_later": 0.8786365891576338,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "ret2",
+    "auroc_y_up": 0.5125703421395923,
+    "auroc_y_gap": 0.5012277565036904,
+    "auroc_y_intra": 0.5104452549607459,
+    "auroc_y_up_if_one_row_later": 0.8043534012867027,
+    "auroc_y_intra_if_one_row_later": 0.7458717755196331,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "ret3",
+    "auroc_y_up": 0.5072054800898778,
+    "auroc_y_gap": 0.5000459994817115,
+    "auroc_y_intra": 0.5079098870747333,
+    "auroc_y_up_if_one_row_later": 0.7410324768861767,
+    "auroc_y_intra_if_one_row_later": 0.694487210148172,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "ret5",
+    "auroc_y_up": 0.5104558892426764,
+    "auroc_y_gap": 0.5003182901338626,
+    "auroc_y_intra": 0.5097091534153142,
+    "auroc_y_up_if_one_row_later": 0.6811299013736973,
+    "auroc_y_intra_if_one_row_later": 0.6455776038198945,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "ret10",
+    "auroc_y_up": 0.5054200652821906,
+    "auroc_y_gap": 0.5005203407994749,
+    "auroc_y_intra": 0.5030923104681315,
+    "auroc_y_up_if_one_row_later": 0.6260537131590295,
+    "auroc_y_intra_if_one_row_later": 0.6023574227814071,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "ret20",
+    "auroc_y_up": 0.5020665292649598,
+    "auroc_y_gap": 0.5024080837647156,
+    "auroc_y_intra": 0.5011368475394327,
+    "auroc_y_up_if_one_row_later": 0.5876627260368764,
+    "auroc_y_intra_if_one_row_later": 0.5735360682323928,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "ma5_ratio",
+    "auroc_y_up": 0.5117623893039734,
+    "auroc_y_gap": 0.5018346031921377,
+    "auroc_y_intra": 0.5105914315721968,
+    "auroc_y_up_if_one_row_later": 0.8170845164809895,
+    "auroc_y_intra_if_one_row_later": 0.7535575011627476,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "ma20_ratio",
+    "auroc_y_up": 0.5053793627166651,
+    "auroc_y_gap": 0.5008598547836312,
+    "auroc_y_intra": 0.5013261030312615,
+    "auroc_y_up_if_one_row_later": 0.6529498177721258,
+    "auroc_y_intra_if_one_row_later": 0.6264306147028323,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "ma60_ratio",
+    "auroc_y_up": 0.5008042506151889,
+    "auroc_y_gap": 0.5071849506243901,
+    "auroc_y_intra": 0.5028783118534667,
+    "auroc_y_up_if_one_row_later": 0.5893816303979795,
+    "auroc_y_intra_if_one_row_later": 0.5742265853840112,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "vol20",
+    "auroc_y_up": 0.5209632943130813,
+    "auroc_y_gap": 0.6059309761771771,
+    "auroc_y_intra": 0.5066968171284012,
+    "auroc_y_up_if_one_row_later": 0.5217855316198672,
+    "auroc_y_intra_if_one_row_later": 0.5044350189960746,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "volume_ratio20",
+    "auroc_y_up": 0.5022526127781303,
+    "auroc_y_gap": 0.5023668386395207,
+    "auroc_y_intra": 0.5035597764122122,
+    "auroc_y_up_if_one_row_later": 0.5243794579253774,
+    "auroc_y_intra_if_one_row_later": 0.5366870290213407,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "hl_range",
+    "auroc_y_up": 0.5191491523830567,
+    "auroc_y_gap": 0.5940415693476936,
+    "auroc_y_intra": 0.5026486834546016,
+    "auroc_y_up_if_one_row_later": 0.5242959467548749,
+    "auroc_y_intra_if_one_row_later": 0.5252478202160764,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "gap_open",
+    "auroc_y_up": 0.5113917730666796,
+    "auroc_y_gap": 0.5552470142930531,
+    "auroc_y_intra": 0.5106579886355949,
+    "auroc_y_up_if_one_row_later": 0.7227449967079925,
+    "auroc_y_intra_if_one_row_later": 0.5275935550416823,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "rsi14",
+    "auroc_y_up": 0.5034695520395567,
+    "auroc_y_gap": 0.5143430060295855,
+    "auroc_y_intra": 0.5063649880980854,
+    "auroc_y_up_if_one_row_later": 0.6147837131366116,
+    "auroc_y_intra_if_one_row_later": 0.6016641637324186,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S1",
+    "feature": "spread",
+    "auroc_y_up": 0.5145331001793773,
+    "auroc_y_gap": 0.5064370297291105,
+    "auroc_y_intra": 0.5088734916657817,
+    "auroc_y_up_if_one_row_later": 0.999903434396431,
+    "auroc_y_intra_if_one_row_later": 0.852017417468424,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S2",
+    "feature": "foreign_net_ratio",
+    "auroc_y_up": 0.5035213704958136,
+    "auroc_y_gap": 0.5124592093797098,
+    "auroc_y_intra": 0.5076088697967306,
+    "auroc_y_up_if_one_row_later": 0.778715099201753,
+    "auroc_y_intra_if_one_row_later": 0.725378464353537,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S2",
+    "feature": "foreign_net_ratio5",
+    "auroc_y_up": 0.5018668420408217,
+    "auroc_y_gap": 0.5013948658353429,
+    "auroc_y_intra": 0.5022448856587785,
+    "auroc_y_up_if_one_row_later": 0.5800861570213081,
+    "auroc_y_intra_if_one_row_later": 0.563630785727885,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S2",
+    "feature": "trust_net_ratio",
+    "auroc_y_up": 0.5086852140958977,
+    "auroc_y_gap": 0.5051227675796871,
+    "auroc_y_intra": 0.5142906539029484,
+    "auroc_y_up_if_one_row_later": 0.5660378592564054,
+    "auroc_y_intra_if_one_row_later": 0.5760269265095403,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S2",
+    "feature": "trust_net_ratio5",
+    "auroc_y_up": 0.5009739508982288,
+    "auroc_y_gap": 0.5147690516860862,
+    "auroc_y_intra": 0.5121965470158137,
+    "auroc_y_up_if_one_row_later": 0.5203454450510562,
+    "auroc_y_intra_if_one_row_later": 0.5310343409447862,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S2",
+    "feature": "dealer_net_ratio",
+    "auroc_y_up": 0.5121968154707948,
+    "auroc_y_gap": 0.5174413527453792,
+    "auroc_y_intra": 0.5042824576603536,
+    "auroc_y_up_if_one_row_later": 0.6082635193486223,
+    "auroc_y_intra_if_one_row_later": 0.5908802975364618,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S2",
+    "feature": "dealer_net_ratio5",
+    "auroc_y_up": 0.5014180825513965,
+    "auroc_y_gap": 0.504234397845968,
+    "auroc_y_intra": 0.5002298032697019,
+    "auroc_y_up_if_one_row_later": 0.5386094058529971,
+    "auroc_y_intra_if_one_row_later": 0.5317571768833106,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S2",
+    "feature": "inst_net_ratio",
+    "auroc_y_up": 0.5032963912017254,
+    "auroc_y_gap": 0.5059753232366251,
+    "auroc_y_intra": 0.503628265614927,
+    "auroc_y_up_if_one_row_later": 0.8124858049148732,
+    "auroc_y_intra_if_one_row_later": 0.7621976681071283,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S2",
+    "feature": "margin_chg",
+    "auroc_y_up": 0.5093828340258364,
+    "auroc_y_gap": 0.5125602620808256,
+    "auroc_y_intra": 0.5016744486755129,
+    "auroc_y_up_if_one_row_later": 0.624363303408695,
+    "auroc_y_intra_if_one_row_later": 0.6118071586995876,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S2",
+    "feature": "margin_chg5",
+    "auroc_y_up": 0.5063171877020963,
+    "auroc_y_gap": 0.5189069250920616,
+    "auroc_y_intra": 0.5025962088459686,
+    "auroc_y_up_if_one_row_later": 0.5396906370160321,
+    "auroc_y_intra_if_one_row_later": 0.5439980954118646,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S2",
+    "feature": "short_chg",
+    "auroc_y_up": 0.5098570620163552,
+    "auroc_y_gap": 0.5047199400907365,
+    "auroc_y_intra": 0.5054317702519087,
+    "auroc_y_up_if_one_row_later": 0.6493314661276973,
+    "auroc_y_intra_if_one_row_later": 0.6264030403604857,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S3",
+    "feature": "taiex_ret1",
+    "auroc_y_up": 0.5023798433004831,
+    "auroc_y_gap": 0.5065031507003392,
+    "auroc_y_intra": 0.501960505078592,
+    "auroc_y_up_if_one_row_later": 0.7153596314923928,
+    "auroc_y_intra_if_one_row_later": 0.6063350297315406,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S3",
+    "feature": "taiex_ret5",
+    "auroc_y_up": 0.5059390904525718,
+    "auroc_y_gap": 0.5047822088824828,
+    "auroc_y_intra": 0.5083058398957809,
+    "auroc_y_up_if_one_row_later": 0.581421277097802,
+    "auroc_y_intra_if_one_row_later": 0.5375441332108257,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S3",
+    "feature": "taiex_ma20_ratio",
+    "auroc_y_up": 0.5084973114112376,
+    "auroc_y_gap": 0.504012161232408,
+    "auroc_y_intra": 0.5096156552371762,
+    "auroc_y_up_if_one_row_later": 0.5628923108183241,
+    "auroc_y_intra_if_one_row_later": 0.5261794343280124,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S3",
+    "feature": "taiex_vol_ratio20",
+    "auroc_y_up": 0.5057615364006005,
+    "auroc_y_gap": 0.5029258401459984,
+    "auroc_y_intra": 0.5005167802538109,
+    "auroc_y_up_if_one_row_later": 0.5135741361496985,
+    "auroc_y_intra_if_one_row_later": 0.5169672884444986,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S3",
+    "feature": "taiex_vol20",
+    "auroc_y_up": 0.5138713348960118,
+    "auroc_y_gap": 0.534188228417781,
+    "auroc_y_intra": 0.5073873605407644,
+    "auroc_y_up_if_one_row_later": 0.5123948673791415,
+    "auroc_y_intra_if_one_row_later": 0.5053366686114436,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S3",
+    "feature": "rel_ret1",
+    "auroc_y_up": 0.5116517183426592,
+    "auroc_y_gap": 0.5030535695118626,
+    "auroc_y_intra": 0.510991500583713,
+    "auroc_y_up_if_one_row_later": 0.8354021898681386,
+    "auroc_y_intra_if_one_row_later": 0.81754479647673,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_sp500_ret",
+    "auroc_y_up": 0.59929281818959,
+    "auroc_y_gap": 0.6882090371985943,
+    "auroc_y_intra": 0.509795449116143,
+    "auroc_y_up_if_one_row_later": 0.5343168172166911,
+    "auroc_y_intra_if_one_row_later": 0.5236686800325847,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_nasdaq_ret",
+    "auroc_y_up": 0.5932308680838417,
+    "auroc_y_gap": 0.6825172979743321,
+    "auroc_y_intra": 0.5130494118979294,
+    "auroc_y_up_if_one_row_later": 0.5317683112932731,
+    "auroc_y_intra_if_one_row_later": 0.5242340574093858,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_sox_ret",
+    "auroc_y_up": 0.5911247450007331,
+    "auroc_y_gap": 0.6799937290266194,
+    "auroc_y_intra": 0.5135396699932853,
+    "auroc_y_up_if_one_row_later": 0.538131308942595,
+    "auroc_y_intra_if_one_row_later": 0.5346266339399334,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_tsm_adr_ret",
+    "auroc_y_up": 0.5717979472428104,
+    "auroc_y_gap": 0.6405432179866118,
+    "auroc_y_intra": 0.5122888519144926,
+    "auroc_y_up_if_one_row_later": 0.5587088165400489,
+    "auroc_y_intra_if_one_row_later": 0.5572414988473502,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_dxy_ret",
+    "auroc_y_up": 0.5578890361331312,
+    "auroc_y_gap": 0.5775021761190362,
+    "auroc_y_intra": 0.5148511503985373,
+    "auroc_y_up_if_one_row_later": 0.5252914290943423,
+    "auroc_y_intra_if_one_row_later": 0.5034586383532961,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_nikkei_ret",
+    "auroc_y_up": 0.5013219535652909,
+    "auroc_y_gap": 0.5030304579081262,
+    "auroc_y_intra": 0.5014348210109221,
+    "auroc_y_up_if_one_row_later": 0.6222329546857575,
+    "auroc_y_intra_if_one_row_later": 0.5263733717440439,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_vix_level",
+    "auroc_y_up": 0.5069585247670081,
+    "auroc_y_gap": 0.5120409018969458,
+    "auroc_y_intra": 0.5075350623194025,
+    "auroc_y_up_if_one_row_later": 0.5148865331484832,
+    "auroc_y_intra_if_one_row_later": 0.503321171058833,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_vix_chg",
+    "auroc_y_up": 0.5895847359412688,
+    "auroc_y_gap": 0.6616014300602355,
+    "auroc_y_intra": 0.504618935809185,
+    "auroc_y_up_if_one_row_later": 0.5199129438299962,
+    "auroc_y_intra_if_one_row_later": 0.5251945726083267,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_usdtwd_chg",
+    "auroc_y_up": 0.5048934299031076,
+    "auroc_y_gap": 0.5011508291413281,
+    "auroc_y_intra": 0.5029395489484014,
+    "auroc_y_up_if_one_row_later": 0.5460578028433397,
+    "auroc_y_intra_if_one_row_later": 0.5051953696697845,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_10y_chg",
+    "auroc_y_up": 0.5143970028354515,
+    "auroc_y_gap": 0.5185135880837326,
+    "auroc_y_intra": 0.5093474730771281,
+    "auroc_y_up_if_one_row_later": 0.5052715223117963,
+    "auroc_y_intra_if_one_row_later": 0.5061821673615957,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S4",
+    "feature": "us_stale",
+    "auroc_y_up": 0.5035200948898502,
+    "auroc_y_gap": 0.5034143791019234,
+    "auroc_y_intra": 0.5019960628009611,
+    "auroc_y_up_if_one_row_later": 0.5010891007874543,
+    "auroc_y_intra_if_one_row_later": 0.500701457562084,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S5",
+    "feature": "weekday",
+    "auroc_y_up": 0.5029616969221554,
+    "auroc_y_gap": 0.5076485341950109,
+    "auroc_y_intra": 0.5046286236535494,
+    "auroc_y_up_if_one_row_later": 0.5055322316675629,
+    "auroc_y_intra_if_one_row_later": 0.5050966607705671,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S5",
+    "feature": "month",
+    "auroc_y_up": 0.5019208362164651,
+    "auroc_y_gap": 0.5048265044724825,
+    "auroc_y_intra": 0.5067064902982896,
+    "auroc_y_up_if_one_row_later": 0.5007909065595971,
+    "auroc_y_intra_if_one_row_later": 0.5054576739928787,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S5",
+    "feature": "is_month_end",
+    "auroc_y_up": 0.5007024088290415,
+    "auroc_y_gap": 0.5009598726190113,
+    "auroc_y_intra": 0.5042244761160526,
+    "auroc_y_up_if_one_row_later": 0.5032995528177084,
+    "auroc_y_intra_if_one_row_later": 0.5040090687410761,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S6",
+    "feature": "n_news",
+    "auroc_y_up": 0.5053997828559188,
+    "auroc_y_gap": 0.5391426799553544,
+    "auroc_y_intra": 0.5101391806137996,
+    "auroc_y_up_if_one_row_later": 0.5336271013570643,
+    "auroc_y_intra_if_one_row_later": 0.5194486355355913,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S6",
+    "feature": "n_news_5d",
+    "auroc_y_up": 0.5054851566468022,
+    "auroc_y_gap": 0.550949601399235,
+    "auroc_y_intra": 0.5140624975985832,
+    "auroc_y_up_if_one_row_later": 0.5141250519472339,
+    "auroc_y_intra_if_one_row_later": 0.5053199784926334,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S6",
+    "feature": "has_news",
+    "auroc_y_up": 0.5035803186956063,
+    "auroc_y_gap": 0.5296837516951558,
+    "auroc_y_intra": 0.5071269025356407,
+    "auroc_y_up_if_one_row_later": 0.5274145362933347,
+    "auroc_y_intra_if_one_row_later": 0.5157263000141498,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S6",
+    "feature": "log_news",
+    "auroc_y_up": 0.5053997828559188,
+    "auroc_y_gap": 0.5391426799553544,
+    "auroc_y_intra": 0.5101391806137996,
+    "auroc_y_up_if_one_row_later": 0.5336271013570643,
+    "auroc_y_intra_if_one_row_later": 0.5194486355355913,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S6",
+    "feature": "market_n_news",
+    "auroc_y_up": 0.5065600526180756,
+    "auroc_y_gap": 0.5006648767888684,
+    "auroc_y_intra": 0.5004696020586114,
+    "auroc_y_up_if_one_row_later": 0.5049055430192635,
+    "auroc_y_intra_if_one_row_later": 0.5017891800998173,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S6",
+    "feature": "text_score_2026",
+    "auroc_y_up": 0.5053346744897045,
+    "auroc_y_gap": 0.5030687907012481,
+    "auroc_y_intra": 0.5027675865744351,
+    "auroc_y_up_if_one_row_later": 0.5127313410756115,
+    "auroc_y_intra_if_one_row_later": 0.5066646007513886,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S6",
+    "feature": "market_text_score_2026",
+    "auroc_y_up": 0.5099902148587161,
+    "auroc_y_gap": 0.5001883446141959,
+    "auroc_y_intra": 0.5103685835148862,
+    "auroc_y_up_if_one_row_later": 0.5131594015038697,
+    "auroc_y_intra_if_one_row_later": 0.509378949618931,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S7",
+    "feature": "sector_ret1_ex",
+    "auroc_y_up": 0.5087349911454293,
+    "auroc_y_gap": 0.5095419487723918,
+    "auroc_y_intra": 0.5081570098945265,
+    "auroc_y_up_if_one_row_later": 0.77701455882214,
+    "auroc_y_intra_if_one_row_later": 0.6851378947150782,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S7",
+    "feature": "sector_ret5_ex",
+    "auroc_y_up": 0.5016564144184923,
+    "auroc_y_gap": 0.5096971366998068,
+    "auroc_y_intra": 0.5032103120860003,
+    "auroc_y_up_if_one_row_later": 0.6124119803817134,
+    "auroc_y_intra_if_one_row_later": 0.5732352433057083,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S7",
+    "feature": "leader_ret1",
+    "auroc_y_up": 0.5021573627562331,
+    "auroc_y_gap": 0.50967241385133,
+    "auroc_y_intra": 0.5049874877152503,
+    "auroc_y_up_if_one_row_later": 0.6634296827327324,
+    "auroc_y_intra_if_one_row_later": 0.5666172653384183,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S7",
+    "feature": "leader_ret5",
+    "auroc_y_up": 0.505247297910022,
+    "auroc_y_gap": 0.5107825731246667,
+    "auroc_y_intra": 0.5052282819227698,
+    "auroc_y_up_if_one_row_later": 0.5666494668614761,
+    "auroc_y_intra_if_one_row_later": 0.5273883813932916,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S7",
+    "feature": "ret1_rank",
+    "auroc_y_up": 0.5157706043365605,
+    "auroc_y_gap": 0.5041803218445712,
+    "auroc_y_intra": 0.5112563352512511,
+    "auroc_y_up_if_one_row_later": 0.8984223940116562,
+    "auroc_y_intra_if_one_row_later": 0.846483635867763,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S7",
+    "feature": "xs_dispersion",
+    "auroc_y_up": 0.5095883542903638,
+    "auroc_y_gap": 0.5289344810646717,
+    "auroc_y_intra": 0.5011154621812397,
+    "auroc_y_up_if_one_row_later": 0.5167103813894564,
+    "auroc_y_intra_if_one_row_later": 0.50160280086261,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S7",
+    "feature": "ret1_minus_sector",
+    "auroc_y_up": 0.5234816963038021,
+    "auroc_y_gap": 0.5129166185624348,
+    "auroc_y_intra": 0.5174088225095039,
+    "auroc_y_up_if_one_row_later": 0.7836791999484806,
+    "auroc_y_intra_if_one_row_later": 0.7612361005171446,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S8",
+    "feature": "tx_night_ret",
+    "auroc_y_up": 0.6338737847006646,
+    "auroc_y_gap": 0.740825450415151,
+    "auroc_y_intra": 0.5030592701520901,
+    "auroc_y_up_if_one_row_later": 0.504561439688687,
+    "auroc_y_intra_if_one_row_later": 0.5017379168050062,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S8",
+    "feature": "tx_night_volume_ratio",
+    "auroc_y_up": 0.5259732228896008,
+    "auroc_y_gap": 0.5245921209426103,
+    "auroc_y_intra": 0.5003740073870274,
+    "auroc_y_up_if_one_row_later": 0.5118548247645508,
+    "auroc_y_intra_if_one_row_later": 0.5022041774566948,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S8",
+    "feature": "tx_day_basis",
+    "auroc_y_up": 0.5047568398040325,
+    "auroc_y_gap": 0.5246995043090286,
+    "auroc_y_intra": 0.5084285141113266,
+    "auroc_y_up_if_one_row_later": 0.5283505289321226,
+    "auroc_y_intra_if_one_row_later": 0.5078891767296194,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S8",
+    "feature": "foreign_fut_net_oi",
+    "auroc_y_up": 0.503884622610334,
+    "auroc_y_gap": 0.5186954082885946,
+    "auroc_y_intra": 0.5068092541850375,
+    "auroc_y_up_if_one_row_later": 0.507738754967523,
+    "auroc_y_intra_if_one_row_later": 0.5082730134684212,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S8",
+    "feature": "foreign_fut_net_oi_chg",
+    "auroc_y_up": 0.5238743038713201,
+    "auroc_y_gap": 0.5171146168544839,
+    "auroc_y_intra": 0.5183644503000691,
+    "auroc_y_up_if_one_row_later": 0.5383018233262096,
+    "auroc_y_intra_if_one_row_later": 0.5179177212083611,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S8",
+    "feature": "dealer_fut_net_oi",
+    "auroc_y_up": 0.5061009670838051,
+    "auroc_y_gap": 0.5065763946929651,
+    "auroc_y_intra": 0.5014735868939337,
+    "auroc_y_up_if_one_row_later": 0.5039495587890965,
+    "auroc_y_intra_if_one_row_later": 0.5005639305227594,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S8",
+    "feature": "dealer_fut_net_oi_chg",
+    "auroc_y_up": 0.5129597325181176,
+    "auroc_y_gap": 0.5136989658539507,
+    "auroc_y_intra": 0.5102795581169794,
+    "auroc_y_up_if_one_row_later": 0.5505919926446621,
+    "auroc_y_intra_if_one_row_later": 0.5066255991099622,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S8",
+    "feature": "total_margin_chg",
+    "auroc_y_up": 0.5129412899081389,
+    "auroc_y_gap": 0.50580835157845,
+    "auroc_y_intra": 0.51357934268325,
+    "auroc_y_up_if_one_row_later": 0.5563803063832891,
+    "auroc_y_intra_if_one_row_later": 0.5442878883130736,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S8",
+    "feature": "total_short_chg",
+    "auroc_y_up": 0.5046177628077921,
+    "auroc_y_gap": 0.5043756605633037,
+    "auroc_y_intra": 0.5010219573995878,
+    "auroc_y_up_if_one_row_later": 0.5477201749277498,
+    "auroc_y_intra_if_one_row_later": 0.5241547598177727,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S9",
+    "feature": "daytrade_share",
+    "auroc_y_up": 0.5146306131145949,
+    "auroc_y_gap": 0.5827391735233871,
+    "auroc_y_intra": 0.507809810084509,
+    "auroc_y_up_if_one_row_later": 0.5212479751587147,
+    "auroc_y_intra_if_one_row_later": 0.5095884780310945,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S9",
+    "feature": "daytrade_share_5d",
+    "auroc_y_up": 0.5152621893806699,
+    "auroc_y_gap": 0.5881324222976319,
+    "auroc_y_intra": 0.5096490289083936,
+    "auroc_y_up_if_one_row_later": 0.5172926976088486,
+    "auroc_y_intra_if_one_row_later": 0.5052464176319975,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S9",
+    "feature": "lend_log",
+    "auroc_y_up": 0.5077272398466147,
+    "auroc_y_gap": 0.5067751854646845,
+    "auroc_y_intra": 0.5094719395353211,
+    "auroc_y_up_if_one_row_later": 0.5150807606945799,
+    "auroc_y_intra_if_one_row_later": 0.5155359494576494,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S9",
+    "feature": "lend_log_5d",
+    "auroc_y_up": 0.5073915781758506,
+    "auroc_y_gap": 0.5168535889143853,
+    "auroc_y_intra": 0.5126701750168675,
+    "auroc_y_up_if_one_row_later": 0.5112680461124883,
+    "auroc_y_intra_if_one_row_later": 0.5154589547366172,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S9",
+    "feature": "rev_yoy",
+    "auroc_y_up": 0.515707054431094,
+    "auroc_y_gap": 0.5327141881806827,
+    "auroc_y_intra": 0.5047510749295305,
+    "auroc_y_up_if_one_row_later": 0.516578317281767,
+    "auroc_y_intra_if_one_row_later": 0.5049704872499193,
+    "flag_predicts_intraday": false
+   },
+   {
+    "source": "S9",
+    "feature": "rev_mom",
+    "auroc_y_up": 0.5029232722886423,
+    "auroc_y_gap": 0.5070207750729178,
+    "auroc_y_intra": 0.5003794927486178,
+    "auroc_y_up_if_one_row_later": 0.5043340575010209,
+    "auroc_y_intra_if_one_row_later": 0.5006422246191964,
+    "flag_predicts_intraday": false
+   }
+  ]
+ },
+ "T2_staleness_test": {
+  "rule": "correlation with a contemporaneous reference at lag -1 / 0 / +1 must peak at lag 0",
+  "n_series": 27,
+  "n_not_peaking_at_lag0": 1,
+  "series": {
+   "taiex_ret1 (S3)": {
+    "reference": "mean stock return of the same day",
+    "lag-1": -0.0021780895555746417,
+    "lag+0": 0.9241158010576036,
+    "lag+1": 0.042885520225585345,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "us_nikkei_ret (S4)": {
+    "reference": "TAIEX return of the same day (Tokyo and Taipei trade the same hours)",
+    "lag-1": -0.0550140809357274,
+    "lag+0": 0.633962641920979,
+    "lag+1": 0.07292470272837033,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "us_sp500_ret (S4)": {
+    "reference": "mean overnight gap Close(t)->Open(t+1) of the 50 stocks (a U.S. session dated t must line up with the gap that follows day t)",
+    "lag-1": 0.01507580910715861,
+    "lag+0": 0.5745291579598515,
+    "lag+1": -0.08612605475432641,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "us_nasdaq_ret (S4)": {
+    "reference": "mean overnight gap Close(t)->Open(t+1) of the 50 stocks (a U.S. session dated t must line up with the gap that follows day t)",
+    "lag-1": 0.003916617100960593,
+    "lag+0": 0.5868673869358135,
+    "lag+1": -0.07989461482630923,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "us_sox_ret (S4)": {
+    "reference": "mean overnight gap Close(t)->Open(t+1) of the 50 stocks (a U.S. session dated t must line up with the gap that follows day t)",
+    "lag-1": -0.012069078663682188,
+    "lag+0": 0.6092504507035718,
+    "lag+1": -0.07042827653181744,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "us_tsm_adr_ret (S4)": {
+    "reference": "mean overnight gap Close(t)->Open(t+1) of the 50 stocks (a U.S. session dated t must line up with the gap that follows day t)",
+    "lag-1": 0.03867780876633999,
+    "lag+0": 0.4772398799900207,
+    "lag+1": -0.049904961629600196,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "us_vix_chg (S4)": {
+    "reference": "mean overnight gap Close(t)->Open(t+1) of the 50 stocks (a U.S. session dated t must line up with the gap that follows day t)",
+    "lag-1": -0.00034154184929293036,
+    "lag+0": -0.4928425409697929,
+    "lag+1": 0.045679607843330715,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "us_10y_chg (S4)": {
+    "reference": "mean overnight gap Close(t)->Open(t+1) of the 50 stocks (a U.S. session dated t must line up with the gap that follows day t)",
+    "lag-1": -0.01874180452458689,
+    "lag+0": -0.036998560100117046,
+    "lag+1": -0.011638359087021299,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "us_dxy_ret (S4)": {
+    "reference": "mean overnight gap Close(t)->Open(t+1) of the 50 stocks (a U.S. session dated t must line up with the gap that follows day t)",
+    "lag-1": -0.11625804959752843,
+    "lag+0": -0.18051708921483114,
+    "lag+1": -0.021142470513215987,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "us_usdtwd_chg (S4)": {
+    "reference": "TAIEX return of the same day (TWD strengthens when Taiwan stocks rise)",
+    "lag-1": -0.12163282117911821,
+    "lag+0": -0.15639724408399652,
+    "lag+1": -0.015888016440613495,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "tx_night_ret (S8)": {
+    "reference": "mean overnight gap that follows day t",
+    "lag-1": -0.05435519973267534,
+    "lag+0": 0.7877613781250048,
+    "lag+1": -0.02375876206189264,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "tx_night_ret (S8) vs S&P 500": {
+    "reference": "U.S. session dated t (trades during the same night)",
+    "lag-1": -0.12391319120455431,
+    "lag+0": 0.6645262985748751,
+    "lag+1": -0.06787398045693135,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "tx_day_basis (S8)": {
+    "reference": "TAIEX return of the same day (change of the basis)",
+    "lag-1": -0.13595834898751671,
+    "lag+0": 0.19081895701729346,
+    "lag+1": 0.05124897462636242,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "foreign_fut_net_oi_chg (S8)": {
+    "reference": "TAIEX return of the same day",
+    "lag-1": -0.23534716783101242,
+    "lag+0": 0.14181574831086255,
+    "lag+1": 0.09325771241191451,
+    "peak": "lag-1",
+    "ok": false,
+    "external_check": "not peaking at lag 0, so the dates were checked against the exchange's own page (taifex.com.tw futContractsDate, TX, foreign investors): open interest long / short 7,218 / 106,791 on 2026-11-12 and 8,086 / 112,357 on 2026-11-11, identical to the FinMind rows of the same dates. The series is dated correctly; the lag profile is behaviour (positions are adjusted the day after a move), not a date shift.",
+    "ok_after_external_check": true
+   },
+   "total_margin_chg (S8)": {
+    "reference": "TAIEX return of the same day",
+    "lag-1": 0.25952229227252616,
+    "lag+0": 0.46059604684868843,
+    "lag+1": -0.06576316028132465,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "xs_dispersion (S7)": {
+    "reference": "mean |stock return| of the same day",
+    "lag-1": 0.3752226989307398,
+    "lag+0": 0.6240227788653525,
+    "lag+1": 0.3384160014765501,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "leader_ret1 (S7)": {
+    "reference": "TAIEX return of the same day",
+    "lag-1": -0.04586072601451147,
+    "lag+0": 0.8784930569422523,
+    "lag+1": 0.03564605421384801,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "foreign_net_ratio (S2)": {
+    "reference": "the stock's own return on the same day",
+    "lag-1": 0.006380165193068928,
+    "lag+0": 0.3617058163092847,
+    "lag+1": 0.013234140294377613,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "trust_net_ratio (S2)": {
+    "reference": "the stock's own return on the same day",
+    "lag-1": 0.06645803425677924,
+    "lag+0": 0.09569928715889849,
+    "lag+1": -0.0048783404848036505,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "dealer_net_ratio (S2)": {
+    "reference": "the stock's own return on the same day",
+    "lag-1": -0.013299131574401971,
+    "lag+0": 0.15866850229557158,
+    "lag+1": 0.006102717298087573,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "margin_chg (S2)": {
+    "reference": "the stock's own return on the same day",
+    "lag-1": 0.009968779566049297,
+    "lag+0": -0.04012780313552419,
+    "lag+1": 0.010485407078937881,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "short_chg (S2)": {
+    "reference": "the stock's own return on the same day",
+    "lag-1": -0.014567192664449462,
+    "lag+0": 0.028027661405827495,
+    "lag+1": -0.0053030073203765744,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "daytrade_share (S9)": {
+    "reference": "the stock's own high-low range on the same day",
+    "lag-1": 0.5896548695394507,
+    "lag+0": 0.6167007490008539,
+    "lag+1": 0.5504632445865594,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "lend_log (S9)": {
+    "reference": "the stock's own relative volume on the same day",
+    "lag-1": 0.05828209804670281,
+    "lag+0": 0.06962623971236134,
+    "lag+1": 0.03345130855018791,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "log_news (S6)": {
+    "reference": "the stock's own high-low range on the same day",
+    "lag-1": 0.15614590404502937,
+    "lag+0": 0.20291073857746494,
+    "lag+1": 0.17119613386518473,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "ret1_rank (S7)": {
+    "reference": "the stock's own return on the same day",
+    "lag-1": -0.012041888621685405,
+    "lag+0": 0.7010870254785189,
+    "lag+1": 0.000977828771838297,
+    "peak": "lag+0",
+    "ok": true
+   },
+   "sector_ret1_ex (S7)": {
+    "reference": "the stock's own return on the same day",
+    "lag-1": 0.03260102265069497,
+    "lag+0": 0.5718472410188141,
+    "lag+1": 0.03212836909441957,
+    "peak": "lag+0",
+    "ok": true
+   }
+  }
+ },
+ "T3_structure": {
+  "label_identities": {
+   "y_up_equals_close_next_gt_close": 1.0,
+   "y_gap_equals_open_next_gt_close": 1.0,
+   "y_intra_equals_close_next_gt_open_next": 1.0,
+   "ret1_of_next_row_equals_ret_next": 0.9999559476217222
+  },
+  "label_next_day": {
+   "share_rows_where_date_next_is_not_the_next_market_day": 0.0006714290431585784,
+   "note": "a stock halted on the next market day is labelled with its next traded day; the U.S. features are then one or more sessions older than the label day"
+  },
+  "fold_purge": {
+   "2023": {
+    "last_train_label_day": "2022-12-30",
+    "first_test_feature_day": "2023-01-03",
+    "ok": true,
+    "inner_val_before_test": true,
+    "inner_train_before_inner_val": true
+   },
+   "2024": {
+    "last_train_label_day": "2023-12-29",
+    "first_test_feature_day": "2024-01-02",
+    "ok": true,
+    "inner_val_before_test": true,
+    "inner_train_before_inner_val": true
+   },
+   "2025": {
+    "last_train_label_day": "2024-12-31",
+    "first_test_feature_day": "2025-01-02",
+    "ok": true,
+    "inner_val_before_test": true,
+    "inner_train_before_inner_val": true
+   },
+   "2026": {
+    "last_train_label_day": "2025-12-31",
+    "first_test_feature_day": "2026-01-02",
+    "ok": true,
+    "inner_val_before_test": true,
+    "inner_train_before_inner_val": true
+   }
+  },
+  "us_merge": {
+   "max_days_us_date_after_tw_date": 0,
+   "share_same_calendar_day": 0.9339625656486029,
+   "share_stale_gt3d": 0.02502370274099562,
+   "share_tw_days_reusing_previous_us_session": 0.06602768903088392
+  },
+  "news_assignment": {
+   "n_headlines": 155403,
+   "share_published_after_the_0830_decision_they_feed": 0.0,
+   "share_that_could_have_fed_an_earlier_decision": 0.0,
+   "first_version": {
+    "share_stamped_0830_0900_counted_before_the_decision": 0.034,
+    "share_weekend_holiday_daytime_headlines_one_row_late": 0.0432
+   },
+   "note": "rule common.news_feature_day since 2026-11-13: window (08:30 on day t, 08:30 on the next trading day]; both shares must be 0"
+  },
+  "sequence_windows": {
+   "last_column_is_the_row_itself": true,
+   "strictly_increasing_dates_within_window": true,
+   "same_stock_within_window": true
+  },
+  "sota_windows_causalstock": {
+   "label_of_window_equals_y_up_of_last_window_day": 1.0,
+   "windows_checked": 90601
+  },
+  "sota_windows_official_advalstm": {
+   "label_on_file_row_d_equals_y_up_of_day_d_minus_1": 1.0,
+   "rows_checked": 1817,
+   "note": "the official loader predicts the label on row d from rows d-seq..d-1, so the window ends on the feature day d-1"
+  },
+  "tx_night_session_date_convention": {
+   "median_abs_gap_night_open_of_NEXT_record_vs_day_close": 0.000704114947911727,
+   "median_abs_gap_night_open_of_SAME_record_vs_day_close": 0.006619537898837624,
+   "reading": "the after-hours record dated t+1 opens at the day-t close, so it is the session that follows day t (15:00 t -> 05:00 t+1); the feature uses that record since 2026-11-13"
+  }
+ }
+}
